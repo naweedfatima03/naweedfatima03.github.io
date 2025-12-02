@@ -4,551 +4,114 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fatima Naweed | Computer Vision Engineer</title>
-
-  <style>
-    :root {
-      --accent: #0b76d8;
-      --accent-soft: rgba(11, 118, 216, 0.08);
-      --bg: #ffffff;
-      --text: #111111;
-      --muted: #555555;
-      --border: #e2e2e2;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-
-    .page {
-      max-width: 1050px;
-      margin: 0 auto;
-      padding: 32px 20px 64px;
-    }
-
-    header {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 16px;
-      align-items: flex-start;
-      margin-bottom: 24px;
-    }
-
-    h1 {
-      font-size: clamp(2.2rem, 3vw, 2.6rem);
-      margin: 0 0 4px;
-    }
-
-    .subtitle {
-      font-size: 0.98rem;
-      color: var(--muted);
-      margin: 0;
-    }
-
-    .chip {
-      display: inline-block;
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      background: var(--accent-soft);
-      color: var(--accent);
-      padding: 4px 10px;
-      border-radius: 999px;
-      margin-top: 10px;
-    }
-
-    .contact {
-      font-size: 0.9rem;
-      text-align: right;
-    }
-
-    .contact a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    .contact a:hover {
-      text-decoration: underline;
-    }
-
-    nav {
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      padding: 10px 0;
-      margin-bottom: 26px;
-      position: sticky;
-      top: 0;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(6px);
-      z-index: 10;
-    }
-
-    nav a {
-      margin-right: 18px;
-      font-size: 0.9rem;
-      text-decoration: none;
-      color: var(--muted);
-    }
-
-    nav a:hover {
-      color: var(--accent);
-    }
-
-    section {
-      margin-bottom: 40px;
-    }
-
-    section h2 {
-      font-size: 1.2rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-weight: 600;
-      margin-bottom: 14px;
-    }
-
-    .section-intro {
-      font-size: 0.92rem;
-      color: var(--muted);
-      margin-bottom: 10px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.7fr) minmax(0, 1.3fr);
-      gap: 24px;
-    }
-
-    .pill-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-top: 6px;
-    }
-
-    .pill {
-      font-size: 0.78rem;
-      padding: 3px 9px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      color: var(--muted);
-    }
-
-    .card {
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      padding: 14px 16px;
-      margin-bottom: 14px;
-      background: #fff;
-    }
-
-    .card-highlight {
-      border-left: 3px solid var(--accent);
-    }
-
-    .card h3 {
-      font-size: 1rem;
-      margin: 0 0 4px;
-    }
-
-    .card h4 {
-      font-size: 0.86rem;
-      margin: 0 0 6px;
-      font-weight: 500;
-      color: var(--muted);
-    }
-
-    .meta {
-      font-size: 0.8rem;
-      color: var(--muted);
-      margin-bottom: 6px;
-    }
-
-    .card ul {
-      margin: 6px 0 0 18px;
-      padding: 0;
-      font-size: 0.9rem;
-    }
-
-    .card ul li {
-      margin-bottom: 3px;
-    }
-
-    .tagline {
-      font-size: 0.9rem;
-      color: var(--muted);
-      max-width: 640px;
-      margin-top: 18px;
-    }
-
-    .two-col {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 18px;
-    }
-
-    .mono {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      font-size: 0.8rem;
-    }
-
-    .link-inline {
-      font-size: 0.85rem;
-      margin-top: 6px;
-    }
-
-    .link-inline a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    .link-inline a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      font-size: 0.78rem;
-      color: var(--muted);
-      border-top: 1px solid var(--border);
-      padding-top: 12px;
-      margin-top: 32px;
-    }
-
-    @media (max-width: 640px) {
-      header {
-        flex-direction: column;
-      }
-      .contact {
-        text-align: left;
-      }
-      nav {
-        position: static;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page">
-    <header>
-      <div>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="brand">
+        <a href="index.html">Fatima Naweed</a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="teaching.html">Teaching &amp; RAships</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <div class="hero-left">
         <h1>Fatima Naweed</h1>
         <p class="subtitle">
-          Computer Vision Engineer &amp; Researcher · Urban Imaging · Embedded Perception
+          Computer Vision Engineer · Urban Imaging &amp; Traffic Systems
         </p>
         <div class="chip">
-          Applying to MIT Media Lab – Camera Culture &amp; City Science
+          MIT Media Lab – Camera Culture &amp; City Science Applicant
         </div>
-        <p class="tagline">
-          I design and deploy computer vision systems that see cities differently – from urban green space
-          segmentation in developing countries to embedded, real-time traffic enforcement stacks deployed
-          across 50+ field installations.
+        <p class="hero-text">
+          I build and deploy computer vision systems that see cities differently – from
+          <strong>urban green space segmentation</strong> in developing countries to
+          <strong>real-time traffic enforcement</strong> stacks deployed across 50+ live installations.
+          My work sits at the intersection of <strong>remote sensing, embedded perception, and urban safety.</strong>
         </p>
-      </div>
-      <div class="contact">
-        <div><a href="mailto:naweedfatima03@gmail.com">naweedfatima03@gmail.com</a></div>
-        <div><a href="https://github.com/naweedfatima03" target="_blank">github.com/naweedfatima03</a></div>
-        <div><a href="https://www.linkedin.com/in/fatima-naweed" target="_blank">linkedin.com/in/fatima-naweed</a></div>
-        <!-- If you host your CV, update this link -->
-        <!-- <div><a href="FN_Resume.pdf" target="_blank">Download CV (PDF)</a></div> -->
-        <div class="mono">Lahore University of Management Sciences · BSc CS (Distinction)</div>
-      </div>
-    </header>
 
-    <nav>
-      <a href="#research-projects">Research &amp; Vision Work</a>
-      <a href="#industry-projects">Industry Systems</a>
-      <a href="#publications">Publications</a>
-      <a href="#teaching">Teaching</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-    <!-- RESEARCH & ACADEMIC PROJECTS -->
-    <section id="research-projects">
-      <h2>Research &amp; Urban Vision Projects</h2>
-      <p class="section-intro">
-        Selected work at the intersection of computer vision, urban informatics, and environmental sensing.
-        Each project links to code, datasets, or artifacts where available.
-      </p>
-
-      <div class="card card-highlight">
-        <h3>Geographically Generalisable Urban Green Space Segmentation</h3>
-        <h4>Center for Urban Informatics and Technology (CITY), LUMS · IGARSS 2025</h4>
-        <p class="meta">
-          YOLOv11n-seg · SAM-based annotation · Cross-city generalisation (Islamabad → Karachi, Swat)
-        </p>
-        <ul>
-          <li>Fine-tuned <strong>YOLOv11n-seg</strong> on high-resolution Google Earth imagery for urban green space segmentation in data-scarce developing-country contexts.</li>
-          <li>Achieved strong performance (IoU 0.803, F1 0.912, Accuracy 0.871) and evaluated robustness across coastal and mountainous geographies.</li>
-          <li>Built SAM-based annotation workflows for two labelled datasets in Islamabad with manual refinement to ensure boundary accuracy.</li>
-        </ul>
-        <p class="link-inline">
-          <a href="https://github.com/naweedfatima03" target="_blank">Code &amp; experiments (GitHub) →</a>
-          &nbsp;·&nbsp;
-          <a href="#" target="_blank">IGARSS 2025 poster (PDF) →</a>
-        </p>
+        <div class="hero-actions">
+          <!-- Update this link once your CV is hosted in the repo -->
+          <!-- <a href="FN_Resume.pdf" class="btn btn-primary" target="_blank">Download CV (PDF)</a> -->
+          <a href="projects.html" class="btn btn-primary">View Projects</a>
+          <a href="teaching.html" class="btn btn-ghost">Teaching &amp; RAships</a>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>Cartesian: Variance and Gaussian-Based Attention for UGS Detection Using GANs</h3>
-        <h4>Computer Vision & Graphics Lab (CVGL), LUMS · Under Submission</h4>
-        <p class="meta">
-          Semantic segmentation · GAN-based generator · Attention design for VHR aerial imagery
-        </p>
-        <ul>
-          <li>Designed <strong>global-variance-pooling</strong> and <strong>Gaussian-distribution</strong> attention modules as replacements for Coordinate Attention in a GAN-based segmentation pipeline.</li>
-          <li>Improved fine-grained urban green space delineation on the UGS-1m Beijing benchmark, with multiplicative variance attention reaching F1 0.752 and IoU 0.598.</li>
-          <li>Used adversarial domain adaptation to transfer performance to Pakistan’s aerial imagery, addressing cross-domain variation.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Urban Green Space Mapping for Developing Countries</h3>
-        <h4>Public Geospatial Dataset for Lahore · CITY, LUMS</h4>
-        <p class="meta">
-          QGIS · Google Earth Engine · ESA WorldCover · OpenStreetMap vegetation masks
-        </p>
-        <ul>
-          <li>Constructed a labelled geospatial dataset of Lahore’s urban green spaces by integrating heterogeneous raster and vector layers.</li>
-          <li>Developed a fully reproducible processing workflow (segmentation thresholds, alignment, consistency checks) to support scalable green-space mapping.</li>
-          <li>Produced a dataset with &gt;90% confidence, intended as an open benchmark for future urban ecology and policy work.</li>
-        </ul>
-        <p class="link-inline">
-          <a href="#" target="_blank">Dataset &amp; workflow (GitHub) →</a>
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>WWF Early-Warning Forest Fire Vision System</h3>
-        <h4>Computer Vision & Graphics Lab (CVGL), LUMS · World Wide Fund Collaboration</h4>
-        <p class="meta">
-          YOLOv7/DETR · Edge deployment (Jetson Nano) · PTZ control · Real-time monitoring
-        </p>
-        <ul>
-          <li>Built a real-time remote forest monitoring system combining distributed PTZ cameras with on-edge fire–smoke detection.</li>
-          <li>Curated an 8,386-image dataset by merging public fire/smoke benchmarks with synthetic imagery for early-smoke generalisation.</li>
-          <li>Benchmarked YOLOv7, YOLOv7-tiny, DETR, and Deformable DETR and deployed YOLOv7-tiny on edge (F1 0.88, ~0.2s latency) in Mansehra.</li>
-        </ul>
-        <p class="link-inline">
-          <a href="https://github.com/naweedfatima03" target="_blank">Forest-fire vision module (GitHub) →</a>
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>PTZ Camera Tracking &amp; Geometric Control</h3>
-        <h4>CVGL, LUMS · Integrated with WWF Fire Detection</h4>
-        <p class="meta">
-          Geometric modelling · Spherical coordinates · Inverse camera mapping
-        </p>
-        <ul>
-          <li>Modeled the mapping from 2D image-plane detections to PTZ actuation commands using spherical transforms and FOV-derived angular offsets.</li>
-          <li>Enabled auto-zoom and re-inference for higher-resolution verification of fire/smoke hypotheses.</li>
-          <li>Validated the model in simulation with near-zero transformation error (10<sup>-33</sup>–10<sup>-34</sup>) and &lt;1% angular deviation.</li>
-        </ul>
+      <div class="hero-right">
+        <!-- Put your photo at /img/profile.jpg or change the src -->
+        <img src="img/profile.jpg" alt="Portrait of Fatima Naweed" class="profile-photo">
       </div>
     </section>
 
-    <!-- INDUSTRY PROJECTS -->
-    <section id="industry-projects">
-      <h2>Industry Systems &amp; Applied Computer Vision</h2>
-      <p class="section-intro">
-        Production-grade vision systems for traffic analytics and automated enforcement at Obvio, Inc.
-      </p>
-
+    <section>
+      <h2>At a Glance</h2>
       <div class="two-col">
         <div>
-          <div class="card card-highlight">
-            <h3>Sentinel: C++ Embedded Vision Stack</h3>
-            <h4>Thundercomm-based traffic enforcement · 30 fps real-time</h4>
-            <p class="meta">
-              C++ · SNPE · BYTETrack · Behavior classification · AWS-backed deployments
-            </p>
-            <ul>
-              <li>Co-designed the architecture for an end-to-end embedded vision stack deployed across 50+ live traffic enforcement installations.</li>
-              <li>Optimised memory management and modularised video processing, inference, tracking, and event handling pipelines to maintain 30 fps throughput.</li>
-              <li>Integrated SNPE-based inference, BYTETrack, and behavior classification for multi-class traffic violation detection.</li>
-            </ul>
-          </div>
-
+          <p class="section-intro"><strong>Current work</strong></p>
           <div class="card">
-            <h3>Vision-Based Speed Estimation (Patent Under Submission)</h3>
-            <h4>Bi-directional, multi-lane speed measurement from monocular video</h4>
-            <p class="meta">
-              3D scene reconstruction · Object-centric regression · 30+ field sites
-            </p>
+            <p class="meta">Computer Vision Engineer · Obvio, Inc.</p>
             <ul>
-              <li>Designed a monocular, vision-only speed estimation pipeline using 3D scene reconstruction and linear regression on vehicle trajectories.</li>
-              <li>Validated generalisation across 30+ sites with varying camera geometries and lane configurations.</li>
+              <li>Co-architecting a C++ embedded vision stack for traffic enforcement on Thundercomm hardware.</li>
+              <li>Designing <strong>vision-only speed estimation</strong> and automated violation detection pipelines deployed in 50+ installations.</li>
+              <li>Running city-scale studies on distracted driving and traffic safety across 30+ high-traffic corridors.</li>
             </ul>
           </div>
         </div>
-
         <div>
+          <p class="section-intro"><strong>Research</strong></p>
           <div class="card">
-            <h3>Citywide Distracted Driving &amp; Traffic Violation Study</h3>
-            <h4>Washington, D.C. · DDOT Collaboration</h4>
-            <p class="meta">
-              Multimodal data capture · Edge devices · Privacy-aware identity obfuscation
-            </p>
+            <p class="meta">LUMS – CITY &amp; Computer Vision &amp; Graphics Lab</p>
             <ul>
-              <li>Implemented real-time data capture pipelines on Thundercomm devices across 30+ high-traffic corridors.</li>
-              <li>Built detection and obfuscation pipelines for distracted driving and related violations, streaming curated evidence to AWS S3.</li>
-              <li>Analysed dataset statistics to quantify violation prevalence (10–20% rates) and co-occurrence patterns for safety policy insights.</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>License Plate Visibility &amp; Exposure Management</h3>
-            <h4>Quality-of-evidence analytics across 40+ deployments</h4>
-            <p class="meta">
-              Laplacian sharpness · OCR readability metrics · Redash dashboards
-            </p>
-            <ul>
-              <li>Defined exposure-quality metrics (OCR-based readability and Laplace-based visibility) to track license-plate clarity in the field.</li>
-              <li>Reduced evidence rejection rates from 15% to 5% by iterating manual and automated exposure schedules informed by metric dashboards.</li>
+              <li>Urban green space segmentation with <strong>YOLOv11n-seg</strong> and generalisation across diverse geographies.</li>
+              <li>GAN-based attention architectures and geospatial datasets for Lahore’s urban ecology.</li>
+              <li>Forest fire early-warning vision systems with PTZ camera control and edge deployment.</li>
             </ul>
           </div>
         </div>
       </div>
-
-      <div class="card">
-        <h3>Trials – Research &amp; Deployment Coordination</h3>
-        <h4>Engineering Lead · Cross-functional vision trials</h4>
-        <ul>
-          <li>Lead a cross-functional team (20+ engineers, annotators, technicians) spanning hardware validation, embedded testing, field operations, and backend optimisation.</li>
-          <li>Oversee data collection (Scout Android app with UVC cameras and radars), AWS ingestion pipelines, and analytics for traffic violation patterns.</li>
-        </ul>
-      </div>
     </section>
 
-    <!-- PUBLICATIONS -->
-    <section id="publications">
-      <h2>Publications &amp; Manuscripts</h2>
-      <div class="card">
-        <ul>
-          <li><strong>Geographically Generalisable Urban Green Space Segmentation for Developing Countries</strong> – IGARSS 2025. (Co-author; urban remote sensing, YOLOv11n-seg, cross-city evaluation.)</li>
-          <li><strong>Cartesian: Variance and Gaussian-Based Attention for Urban Green Space Detection Using GANs</strong> – Under submission. Principal architectural contributions on attention design.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- TEACHING -->
-    <section id="teaching">
-      <h2>Teaching &amp; Mentorship</h2>
+    <section>
+      <h2>Interests</h2>
       <p class="section-intro">
-        Teaching roles emphasise fundamentals of circuits, machine learning, deep learning, and computer vision.
+        I’m drawn to problems where vision, sensing, and cities overlap:
       </p>
       <div class="card">
-        <h3>Undergraduate Teaching Assistant · LUMS</h3>
-        <p class="meta">EE514/CS535 Machine Learning · CS437/CS5317/EE414/EE517 Deep Learning · CS436/CS5310/EE513 Computer Vision Fundamentals · EE240 Circuits I (2021–2024)</p>
-        <ul>
-          <li>Served multiple times as <strong>Head TA</strong> for graduate-level Machine Learning and Deep Learning courses.</li>
-          <li>Led recitations, debugging sessions, and project mentorship focused on reproducible experiments and clear documentation.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Game Development Workshops – Girls Make Games</h3>
-        <p class="meta">Unreal Engine · Unity · 50+ school students</p>
-        <ul>
-          <li>Designed and delivered workshops on game design and interactive 3D environments for girls in high school and early undergrad.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills">
-      <h2>Technical Skills</h2>
-      <div class="grid">
-        <div>
-          <h3>Programming</h3>
-          <div class="pill-row">
-            <span class="pill">Python</span>
-            <span class="pill">C++</span>
-            <span class="pill">Go</span>
-            <span class="pill">C</span>
-            <span class="pill">R</span>
-            <span class="pill">Swift</span>
-            <span class="pill">MATLAB</span>
-            <span class="pill">SQL</span>
-          </div>
-
-          <h3>Vision &amp; ML Frameworks</h3>
-          <div class="pill-row">
-            <span class="pill">PyTorch</span>
-            <span class="pill">TensorFlow</span>
-            <span class="pill">Keras</span>
-            <span class="pill">Detectron2</span>
-            <span class="pill">ONNX</span>
-            <span class="pill">SNPE</span>
-            <span class="pill">OpenCV</span>
-          </div>
-
-          <h3>Cloud &amp; MLOps</h3>
-          <div class="pill-row">
-            <span class="pill">AWS (S3, RDS)</span>
-            <span class="pill">MLflow</span>
-            <span class="pill">TensorRT</span>
-            <span class="pill">CUDA</span>
-            <span class="pill">Docker</span>
-          </div>
-        </div>
-        <div>
-          <h3>Data &amp; Analysis</h3>
-          <div class="pill-row">
-            <span class="pill">NumPy</span>
-            <span class="pill">Pandas</span>
-            <span class="pill">scikit-learn</span>
-            <span class="pill">matplotlib</span>
-            <span class="pill">Plotly</span>
-          </div>
-
-          <h3>Spatial &amp; Remote Sensing</h3>
-          <div class="pill-row">
-            <span class="pill">Google Earth Engine</span>
-            <span class="pill">QGIS</span>
-            <span class="pill">ESA WorldCover</span>
-            <span class="pill">Satellite imagery pipelines</span>
-          </div>
-
-          <h3>Other Tools</h3>
-          <div class="pill-row">
-            <span class="pill">Unity</span>
-            <span class="pill">Unreal Engine</span>
-            <span class="pill">Blender</span>
-            <span class="pill">Retool</span>
-            <span class="pill">Redash</span>
-            <span class="pill">Figma</span>
-          </div>
+        <div class="pill-row">
+          <span class="pill">Remote sensing &amp; urban green space</span>
+          <span class="pill">Embedded CV for safety &amp; mobility</span>
+          <span class="pill">Camera geometry &amp; PTZ control</span>
+          <span class="pill">City-scale traffic analytics</span>
+          <span class="pill">Fair &amp; context-aware AI in cities</span>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact">
+    <section>
       <h2>Contact</h2>
-      <p>
-        I’m especially interested in projects at the intersection of computer vision, urban systems,
-        and novel imaging / sensing modalities. For collaborations or references, feel free to reach out:
-      </p>
-      <p>
-        <strong>Email:</strong> <a href="mailto:naweedfatima03@gmail.com">naweedfatima03@gmail.com</a><br>
-        <strong>GitHub:</strong> <a href="https://github.com/naweedfatima03" target="_blank">github.com/naweedfatima03</a><br>
-        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/fatima-naweed" target="_blank">linkedin.com/in/fatima-naweed</a>
-      </p>
+      <div class="card">
+        <p>
+          For collaborations, references, or research fit questions feel free to reach out.
+        </p>
+        <p>
+          <strong>Email:</strong> <a href="mailto:naweedfatima03@gmail.com">naweedfatima03@gmail.com</a><br>
+          <strong>GitHub:</strong> <a href="https://github.com/naweedfatima03" target="_blank">github.com/naweedfatima03</a><br>
+          <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/fatima-naweed" target="_blank">linkedin.com/in/fatima-naweed</a>
+        </p>
+      </div>
     </section>
 
     <footer>
-      Last updated: November 2025 · This page is a concise web mirror of my full portfolio &amp; CV.
+      Last updated: December 2025 · This site accompanies my MIT Media Lab portfolio PDF.
     </footer>
-  </div>
+  </main>
 </body>
 </html>
