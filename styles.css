@@ -133,14 +133,18 @@ body {
 .hero-right {
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding-top: 10px;
 }
 
+
 .profile-photo {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 340px;          /* Bigger */
+  height: auto;          /* Keep proportions */
+  border-radius: 12px;   /* Slightly rounded rectangle */
+  object-fit: cover;     
   border: 3px solid var(--accent-soft);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08); /* optional: makes it look modern */
 }
 
 /* SECTIONS */
