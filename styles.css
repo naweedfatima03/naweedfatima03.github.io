@@ -1,14 +1,25 @@
 :root {
-  --bg: #050711;
-  --bg-alt: #0b0f1c;
-  --bg-card: #0f1729;
-  --bg-card-soft: #101827;
-  --accent: #38bdf8;              /* neon-ish cyan */
-  --accent-soft: rgba(56, 189, 248, 0.13);
-  --accent-strong: #0ea5e9;
-  --text: #f9fafb;
-  --muted: #9ca3af;
-  --border: #1f2937;
+  /* Backgrounds */
+  --bg: #0b0b0d;                /* deep charcoal */
+  --bg-alt: #111114;            /* slightly lighter */
+  --bg-card: #17171a;           /* card background */
+  --bg-card-soft: #1d1d21;      /* softer overlay */
+
+  /* Accents */
+  --accent: #ff8a3d;            /* vibrant orange */
+  --accent-strong: #ff6b00;     /* deeper orange */
+  --accent-soft: rgba(255, 138, 61, 0.2);
+
+  /* Additional accents */
+  --accent-pink: #ff4f9a;       /* hot pink */
+  --accent-teal: #2dd4bf;       /* teal / aqua */
+
+  /* Typography */
+  --text: #f5f5f7;              /* off-white */
+  --muted: #b0b0ba;             /* cool muted grey */
+
+  /* Borders & shadows */
+  --border: #242428;
   --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.6);
 }
 
@@ -18,7 +29,11 @@
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: radial-gradient(circle at top left, #111827 0, #020617 45%, #000 100%);
+  background:
+    radial-gradient(circle at 10% 20%, rgba(255, 138, 61, 0.07) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(45, 212, 191, 0.06) 0%, transparent 45%),
+    radial-gradient(circle at 60% 30%, rgba(255, 79, 154, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at top left, #15151a 0, #050507 45%, #000 100%);
   color: var(--text);
   margin: 0;
   padding: 0;
@@ -40,8 +55,8 @@ body {
   top: 0;
   z-index: 40;
   backdrop-filter: blur(16px);
-  background: linear-gradient(to bottom, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.85));
-  border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+  background: linear-gradient(to bottom, rgba(12, 12, 16, 0.96), rgba(12, 12, 16, 0.9));
+  border-bottom: 1px solid rgba(80, 80, 92, 0.45);
 }
 
 .site-header-inner {
@@ -92,7 +107,12 @@ body {
   bottom: 0;
   height: 2px;
   width: 0;
-  background: linear-gradient(to right, var(--accent), var(--accent-strong));
+  background: linear-gradient(
+    to right,
+    var(--accent),
+    var(--accent-pink),
+    var(--accent-teal)
+  );
   transition: width 0.18s ease-out;
 }
 
@@ -135,18 +155,22 @@ body {
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.22), rgba(15, 23, 42, 0.9));
+  background: radial-gradient(
+    circle at top left,
+    rgba(255, 138, 61, 0.26),
+    rgba(24, 24, 28, 0.95)
+  );
   color: var(--accent);
   padding: 5px 11px;
   border-radius: 999px;
-  border: 1px solid rgba(56, 189, 248, 0.45);
+  border: 1px solid rgba(255, 138, 61, 0.55);
   margin-bottom: 16px;
 }
 
 .hero-text {
   font-size: 0.95rem;
   max-width: 640px;
-  color: #e5e7eb;
+  color: #e4e4ec;
 }
 
 .hero-actions {
@@ -168,18 +192,23 @@ body {
   text-decoration: none;
   border: 1px solid var(--accent);
   cursor: pointer;
-  transition: background 0.18s ease, color 0.18s ease, transform 0.12s ease;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.12s ease, box-shadow 0.16s ease;
 }
 
 .btn-primary {
-  background: linear-gradient(to right, var(--accent), var(--accent-strong));
-  color: #0b1120;
-  box-shadow: 0 4px 10px rgba(56, 189, 248, 0.25); /* toned down */
+  background: linear-gradient(
+    135deg,
+    var(--accent),
+    var(--accent-pink),
+    var(--accent-teal)
+  );
+  color: #0b0b0f;
+  box-shadow: 0 4px 10px rgba(255, 138, 61, 0.2);
 }
 
 .btn-primary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(56, 189, 248, 0.15); /* softer hover */
+  box-shadow: 0 6px 16px rgba(255, 138, 61, 0.15);
 }
 
 .btn-ghost {
@@ -188,7 +217,9 @@ body {
 }
 
 .btn-ghost:hover {
-  background: rgba(15, 23, 42, 0.8);
+  background: rgba(45, 212, 191, 0.13);
+  color: var(--accent-pink);
+  border-color: var(--accent-pink);
 }
 
 /* HERO IMAGE */
@@ -204,9 +235,9 @@ body {
   height: auto;
   border-radius: 5px; /* rectangular with soft corners */
   object-fit: cover;
-  border: 1px solid rgba(148, 163, 184, 0.4);
+  border: 1px solid rgba(255, 138, 61, 0.4);
   box-shadow: var(--shadow-soft);
-  background: radial-gradient(circle at top, rgba(56, 189, 248, 0.12), transparent 60%);
+  background: radial-gradient(circle at top, rgba(255, 138, 61, 0.16), transparent 60%);
 }
 
 /* SECTIONS */
@@ -221,7 +252,7 @@ section h2 {
   letter-spacing: 0.16em;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #e5e7eb;
+  color: #f3f4f6;
 }
 
 .section-intro {
@@ -240,13 +271,14 @@ section h2 {
 
 .card {
   border-radius: 14px;
-  border: 1px solid rgba(31, 41, 55, 0.9);
+  border: 1px solid rgba(36, 36, 40, 0.95);
   padding: 14px 16px;
   margin-bottom: 14px;
-  background: radial-gradient(circle at top left, rgba(30, 64, 175, 0.3), transparent 65%),
-              radial-gradient(circle at bottom right, rgba(8, 47, 73, 0.55), transparent 70%),
-              var(--bg-card);
-  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.75);
+  background:
+    radial-gradient(circle at top left, rgba(255, 138, 61, 0.22), transparent 65%),
+    radial-gradient(circle at bottom right, rgba(45, 212, 191, 0.18), transparent 70%),
+    var(--bg-card);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.85);
 }
 
 .card h3 {
@@ -280,7 +312,7 @@ section h2 {
 }
 
 .card-highlight {
-  border-left: 3px solid var(--accent);
+  border-left: 3px solid var(--accent-pink);
 }
 
 /* TAGS / PILLS */
@@ -296,12 +328,29 @@ section h2 {
   font-size: 0.78rem;
   padding: 4px 10px;
   border-radius: 999px;
-  border: 1px solid rgba(148, 163, 184, 0.7);
+  border: 1px solid rgba(80, 80, 92, 0.8);
   color: var(--muted);
-  background: rgba(15, 23, 42, 0.9);
+  background: rgba(23, 23, 28, 0.95);
 }
 
-/* LINKS */
+/* INLINE LINKS (for project links, etc.) */
+
+.link-inline {
+  font-size: 0.85rem;
+  margin-top: 6px;
+}
+
+.link-inline a {
+  color: var(--accent-teal);
+  text-decoration: none;
+}
+
+.link-inline a:hover {
+  color: var(--accent-pink);
+  text-decoration: underline;
+}
+
+/* GLOBAL LINKS */
 
 a {
   color: var(--accent);
@@ -316,7 +365,7 @@ a:hover {
 footer {
   font-size: 0.78rem;
   color: var(--muted);
-  border-top: 1px solid rgba(31, 41, 55, 0.9);
+  border-top: 1px solid rgba(36, 36, 40, 0.95);
   padding-top: 12px;
   margin-top: 32px;
 }
