@@ -179,7 +179,7 @@ body {
 
 .btn-primary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(56, 189, 248, 0.3); /* softer hover */
+  box-shadow: 0 6px 16px rgba(56, 189, 248, 0.15); /* softer hover */
 }
 
 .btn-ghost {
