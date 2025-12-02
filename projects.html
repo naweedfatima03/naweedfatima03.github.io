@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Fatima Naweed</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="brand">
+        <a href="index.html">Fatima Naweed</a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="teaching.html">Teaching &amp; RAships</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section>
+      <h2>Research &amp; Urban Vision Projects</h2>
+      <p class="section-intro">
+        Selected work at the intersection of computer vision, urban informatics, and environmental sensing.
+      </p>
+
+      <div class="card card-highlight">
+        <h3>Geographically Generalisable Urban Green Space Segmentation</h3>
+        <h4>CITY – LUMS · IGARSS 2025</h4>
+        <p class="meta">
+          YOLOv11n-seg · SAM-based annotation · Cross-city generalisation
+        </p>
+        <ul>
+          <li>Fine-tuned <strong>YOLOv11n-seg</strong> on high-resolution Google Earth imagery for urban green space segmentation in Islamabad.</li>
+          <li>Achieved IoU 0.803, F1 0.912, and Accuracy 0.871; tested transferability to Karachi and Swat with strong qualitative performance.</li>
+          <li>Built SAM-based annotation workflows with manual refinement to ensure accurate boundaries for two labelled datasets.</li>
+        </ul>
+        <!-- Add real links when ready -->
+        <!-- <p class="meta"><a href="..." target="_blank">Code / experiments</a> · <a href="..." target="_blank">Poster (PDF)</a></p> -->
+      </div>
+
+      <div class="card">
+        <h3>Cartesian: Variance and Gaussian-Based Attention for UGS Detection Using GANs</h3>
+        <h4>Computer Vision &amp; Graphics Lab – LUMS · Under submission</h4>
+        <p class="meta">
+          Semantic segmentation · GAN-based generator · Attention design
+        </p>
+        <ul>
+          <li>Designed global-variance and Gaussian-distribution attention modules as replacements for Coordinate Attention in a GAN-based pipeline.</li>
+          <li>Improved segmentation on the Beijing UGS-1m benchmark, with multiplicative variance attention reaching F1 0.752 and IoU 0.598.</li>
+          <li>Applied adversarial domain adaptation to transfer learning from Beijing to Pakistani imagery.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Urban Green Space Mapping for Lahore</h3>
+        <h4>CITY – LUMS</h4>
+        <p class="meta">
+          QGIS · Google Earth Engine · ESA WorldCover · OpenStreetMap
+        </p>
+        <ul>
+          <li>Constructed a labelled geospatial dataset of Lahore’s urban green spaces by integrating ESA WorldCover, OSM, and aerial imagery.</li>
+          <li>Designed a reproducible processing workflow (alignment, segmentation thresholds, consistency checks) for scalable green space mapping.</li>
+          <li>Produced a dataset with &gt;90% confidence intended as an open benchmark for future urban ecology work.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Forest Fire Early-Warning Vision System</h3>
+        <h4>WWF Collaboration · CVGL – LUMS</h4>
+        <p class="meta">
+          YOLOv7/YOLOv7-tiny · DETR · Edge deployment · PTZ cameras
+        </p>
+        <ul>
+          <li>Built a real-time remote forest monitoring system combining PTZ cameras with on-edge fire–smoke detection.</li>
+          <li>Curated an 8,386-image dataset by merging public fire/smoke benchmarks with synthetic imagery for early-smoke detection.</li>
+          <li>Benchmarked YOLOv7, YOLOv7-tiny, DETR, and Deformable DETR; deployed YOLOv7-tiny on Jetson-class hardware with F1 0.88 and ~0.2s latency.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>PTZ Camera Tracking &amp; Geometric Control</h3>
+        <h4>Integrated with WWF Fire Detection System</h4>
+        <p class="meta">
+          Camera geometry · Spherical coordinates · 2D → PTZ mapping
+        </p>
+        <ul>
+          <li>Modelled the mapping from image-plane detections to PTZ actuation using spherical transforms and FOV-derived angular offsets.</li>
+          <li>Enabled automatic zoom and re-inference for higher-resolution verification of fire/smoke hypotheses.</li>
+          <li>Validated in simulation with transformation error ≈ 10⁻³³–10⁻³⁴ and &lt;1% angular deviation.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Industry Systems &amp; Applied Computer Vision</h2>
+      <p class="section-intro">
+        Production-grade systems for traffic analytics and automated enforcement at Obvio, Inc.
+      </p>
+
+      <div class="card card-highlight">
+        <h3>Sentinel: C++ Embedded Vision Stack for Traffic Enforcement</h3>
+        <h4>Obvio, Inc. · Thundercomm-based system</h4>
+        <p class="meta">
+          C++ · SNPE · BYTETrack · Real-time inference
+        </p>
+        <ul>
+          <li>Co-designed the architecture for an end-to-end embedded vision pipeline deployed across 50+ enforcement installations.</li>
+          <li>Modularised video processing, inference, tracking, and event handling to maintain 30 fps throughput under constrained hardware.</li>
+          <li>Integrated SNPE-based model inference, BYTETrack, and behavior classification for multi-class violation detection.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Vision-Only Speed Estimation (Patent Under Submission)</
