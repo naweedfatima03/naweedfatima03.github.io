@@ -204,7 +204,7 @@ body {
   height: auto;
   border-radius: 18px; /* rectangular with soft corners */
   object-fit: cover;
-  border: 1px solid rgba(148, 163, 184, 0.4);
+  border: 0px solid rgba(148, 163, 184, 0.4);
   box-shadow: var(--shadow-soft);
   background: radial-gradient(circle at top, rgba(56, 189, 248, 0.12), transparent 60%);
 }
