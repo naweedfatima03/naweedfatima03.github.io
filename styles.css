@@ -1,0 +1,260 @@
+:root {
+  --accent: #0b76d8;
+  --accent-soft: rgba(11, 118, 216, 0.08);
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #555555;
+  --border: #e2e2e2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.page {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+
+/* NAVBAR */
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+
+.site-header-inner {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.brand {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.brand a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.main-nav a {
+  margin-left: 18px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: var(--accent);
+}
+
+/* HOME LAYOUT */
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: center;
+}
+
+.hero-left h1 {
+  font-size: clamp(2.2rem, 3vw, 2.6rem);
+  margin: 0 0 6px;
+}
+
+.subtitle {
+  font-size: 0.98rem;
+  color: var(--muted);
+  margin: 0 0 12px;
+}
+
+.chip {
+  display: inline-block;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: var(--accent-soft);
+  color: var(--accent);
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+.hero-text {
+  font-size: 0.95rem;
+  max-width: 640px;
+}
+
+.hero-actions {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: 1px solid var(--accent);
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: white;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--accent);
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent-soft);
+}
+
+/* SECTIONS */
+
+section {
+  margin-top: 40px;
+}
+
+section h2 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.section-intro {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+/* CARDS / LISTS */
+
+.card {
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  background: #fff;
+}
+
+.card h3 {
+  font-size: 1rem;
+  margin: 0 0 4px;
+}
+
+.card h4 {
+  font-size: 0.86rem;
+  margin: 0 0 6px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.meta {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.card ul {
+  margin: 6px 0 0 18px;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.card ul li {
+  margin-bottom: 3px;
+}
+
+.card-highlight {
+  border-left: 3px solid var(--accent);
+}
+
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.pill {
+  font-size: 0.78rem;
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+/* FOOTER */
+
+footer {
+  font-size: 0.78rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+  margin-top: 32px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 720px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-right {
+    order: -1;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .main-nav a {
+    margin-left: 10px;
+    margin-top: 4px;
+  }
+}
