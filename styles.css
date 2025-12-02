@@ -174,12 +174,12 @@ body {
 .btn-primary {
   background: linear-gradient(to right, var(--accent), var(--accent-strong));
   color: #0b1120;
-  box-shadow: 0 12px 24px rgba(56, 189, 248, 0.35);
+  box-shadow: 0 4px 10px rgba(56, 189, 248, 0.25); /* toned down */
 }
 
 .btn-primary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 16px 32px rgba(56, 189, 248, 0.45);
+  box-shadow: 0 6px 16px rgba(56, 189, 248, 0.3); /* softer hover */
 }
 
 .btn-ghost {
