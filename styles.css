@@ -526,6 +526,30 @@ AT A GLANCE - 3 Equal Cards
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.05);
 }
 
+/* GRADIENT ACCENT FOR GMG CARD */
+.gmg-accent {
+  border-left: 4px solid;
+  border-image: linear-gradient(
+    to bottom,
+    var(--accent),
+    var(--accent-pink),
+    var(--accent-teal)
+  ) 1;
+  transition: border 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+}
+
+.gmg-accent:hover {
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.10);
+  transform: translateY(-2px);
+}
+
+.gmg-accent {
+  background:
+    radial-gradient(circle at top left, rgba(255, 138, 61, 0.08), transparent 60%),
+    radial-gradient(circle at bottom right, rgba(0, 191, 166, 0.08), transparent 65%),
+    var(--bg-card);
+}
+
 .pub-card h3 {
   margin: 0 0 6px;
   font-size: 0.95rem;
