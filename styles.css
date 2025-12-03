@@ -203,6 +203,17 @@ body {
   opacity: 0.22;
 }
 
+/* Remove icon layout — full-width text */
+.ta-layout.no-icon {
+  grid-template-columns: 1fr !important;
+}
+
+/* Ensure padding stays balanced */
+.ta-layout.no-icon {
+  padding: 28px 32px;
+}
+
+
 /* Responsive */
 @media (max-width: 760px) {
   .ta-layout {
