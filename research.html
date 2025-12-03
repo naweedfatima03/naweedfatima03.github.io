@@ -29,8 +29,8 @@
     <section>
       <h2>Research</h2>
       <p class="section-intro">
-        Selected projects from my role as a Computer Vision Engineer and engineering lead for Trials (R&amp;D),
-        focusing on multi-modal perception, city-scale deployments, and embedded systems.
+        Selected research from my time at the Computer Vision &amp; Graphics Lab (CVGL) and the Centre for Urban Informatics,
+        Technology and Policy (CITY), focusing on early-warning vision systems and geospatial methods for urban green space mapping.
       </p>
     </section>
 
@@ -38,63 +38,127 @@
     <section>
       <div class="project-grid">
 
-        <!-- PROJECT CARD 1 -->
+        <!-- WWF INITIATIVE -->
+
+        <!-- PROJECT CARD 1: WWF Early-Warning Forest Fire Vision System -->
         <article class="card project-card">
           <div class="project-media">
             <!-- Replace with your own image -->
-            <img src="img/sentinel-stack.jpg" alt="Embedded vision stack for traffic enforcement">
+            <img src="img/wwf-vision-system.jpg" alt="WWF early-warning forest fire vision system">
           </div>
           <div class="project-body">
-            <h3>Sentinel: Embedded Vision Stack for Traffic Enforcement</h3>
-            <p class="meta">Obvio, Inc. · Engineering Lead</p>
+            <h3>WWF Early-Warning Forest Fire Vision System</h3>
+            <p class="meta">WWF Initiative · CVGL, LUMS</p>
             <p>
-              Co-architecting a modular C++ perception stack for multi-lane traffic enforcement, integrating
-              detection, tracking, and evidence generation for large-scale deployments.
+              Developed a real-time remote forest monitoring system combining a distributed PTZ camera network
+              with edge-based fire–smoke detection to provide early alerts in vulnerable regions.
             </p>
             <div class="pill-row">
-              <span class="pill">Embedded vision</span>
-              <span class="pill">Real-time inference</span>
-              <span class="pill">Systems design</span>
+              <span class="pill">Early-warning systems</span>
+              <span class="pill">Edge inference</span>
+              <span class="pill">Environmental monitoring</span>
             </div>
           </div>
         </article>
 
-        <!-- PROJECT CARD 2 -->
+        <!-- PROJECT CARD 2: PTZ Camera Tracking Model -->
         <article class="card project-card">
           <div class="project-media">
-            <img src="img/speed-estimation.jpg" alt="Vision-only speed estimation pipeline">
+            <img src="img/ptz-tracking.jpg" alt="PTZ camera tracking model for forest fire monitoring">
           </div>
           <div class="project-body">
-            <h3>Vision-Only Speed Estimation</h3>
-            <p class="meta">Obvio, Inc. · Patent under submission</p>
+            <h3>PTZ Camera Tracking &amp; Actuation Model</h3>
+            <p class="meta">WWF Initiative · CVGL, LUMS</p>
             <p>
-              Designing a monocular, bi-directional speed estimation pipeline using 3D scene reasoning and
-              robust calibration to support camera-only deployments across diverse sites.
+              Implemented a PTZ tracking model that maps image-plane detections to real-world pan–tilt actuation,
+              enabling automatic zoom and re-targeting for higher-resolution fire–smoke verification.
             </p>
             <div class="pill-row">
-              <span class="pill">3D reasoning</span>
-              <span class="pill">Monocular vision</span>
-              <span class="pill">City-scale pilots</span>
+              <span class="pill">Camera geometry</span>
+              <span class="pill">PTZ control</span>
+              <span class="pill">Tracking-by-detection</span>
             </div>
           </div>
         </article>
 
-        <!-- PROJECT CARD 3 -->
+        <!-- PROJECT CARD 3: Haze Removal via Dark Channel Prior -->
         <article class="card project-card">
           <div class="project-media">
-            <img src="img/distracted-driving.jpg" alt="City-scale distracted driving study">
+            <img src="img/haze-removal.jpg" alt="Haze removal via Dark Channel Prior">
           </div>
           <div class="project-body">
-            <h3>City-Scale Distracted Driving Study</h3>
-            <p class="meta">Washington, D.C. · Trials &amp; Analytics</p>
+            <h3>Haze Removal via Dark Channel Prior</h3>
+            <p class="meta">WWF Initiative · CVGL, LUMS</p>
             <p>
-              Leading perception and data pipelines for a multi-corridor study on distracted driving and
-              violations, combining edge capture with privacy-aware analytics.
+              Designed a Dark Channel Prior–based dehazing module to improve visibility and downstream detection
+              performance in foggy and low-contrast forest monitoring imagery.
             </p>
             <div class="pill-row">
-              <span class="pill">Temporal monitoring</span>
-              <span class="pill">Urban analytics</span>
-              <span class="pill">Policy-facing insights</span>
+              <span class="pill">Image restoration</span>
+              <span class="pill">Dehazing</span>
+              <span class="pill">Pre-processing for CV</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- GREENSPACE INITIATIVE -->
+
+        <!-- PROJECT CARD 4: Lahore Geospatial Dataset -->
+        <article class="card project-card">
+          <div class="project-media">
+            <img src="img/lahore-greenspace-dataset.jpg" alt="Geospatial dataset for Lahore’s urban green spaces">
+          </div>
+          <div class="project-body">
+            <h3>Geospatial Dataset for Lahore’s Urban Green Space</h3>
+            <p class="meta">Urban Green Space Initiative · CITY, LUMS</p>
+            <p>
+              Constructed a labelled geospatial dataset for Lahore’s green spaces by fusing Google Maps vegetation masks,
+              OpenStreetMap land-use polygons, and ESA WorldCover layers into a reproducible mapping workflow.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Remote sensing</span>
+              <span class="pill">Geospatial data</span>
+              <span class="pill">QGIS &amp; GEE</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT CARD 5: Geographically Generalisable Segmentation -->
+        <article class="card project-card">
+          <div class="project-media">
+            <img src="img/geographical-segmentation.jpg" alt="Geographically generalisable urban green space segmentation">
+          </div>
+          <div class="project-body">
+            <h3>Geographically Generalisable Urban Green Space Segmentation</h3>
+            <p class="meta">Urban Green Space Initiative · CITY, LUMS</p>
+            <p>
+              Investigated geographically generalisable methods for urban green-space segmentation, fine-tuning YOLOv11n-seg
+              on high-resolution imagery and evaluating transfer to contrasting landscapes across Pakistan.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Semantic segmentation</span>
+              <span class="pill">Domain generalisation</span>
+              <span class="pill">Satellite imagery</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT CARD 6: Cartesian GAN-based Attention -->
+        <article class="card project-card">
+          <div class="project-media">
+            <img src="img/cartesian-gan.jpg" alt="GAN-based attention for urban green space detection">
+          </div>
+          <div class="project-body">
+            <h3>Cartesian: GAN-Based Attention for Green Space Detection</h3>
+            <p class="meta">Urban Green Space Initiative · CITY, LUMS</p>
+            <p>
+              Developed Cartesian, a GAN-based semantic segmentation framework with variance- and Gaussian-based attention
+              modules to improve fine-grained urban green space detection in very high-resolution imagery.
+            </p>
+            <div class="pill-row">
+              <span class="pill">GANs</span>
+              <span class="pill">Attention mechanisms</span>
+              <span class="pill">Environmental mapping</span>
             </div>
           </div>
         </article>
@@ -108,4 +172,3 @@
   </main>
 </body>
 </html>
-
