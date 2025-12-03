@@ -464,6 +464,23 @@ a:hover {
   height: 100%;
 }
 
+/* FIX PROJECT CARD IMAGE OVERFLOW */
+.project-card {
+  padding: 0 !important;          /* remove inherited card padding */
+  overflow: hidden;                /* prevent the image from overflowing */
+  border-radius: 16px;             /* smooth card corners */
+}
+
+.project-card .project-media {
+  padding: 0 !important;
+  margin: 0 !important;
+  border-bottom: 1px solid rgba(0,0,0,0.06); /* optional separator */
+}
+
+.project-card .project-body {
+  padding: 16px;                   /* add padding only to the text section */
+}
+
 /* Image area */
 
 .project-media {
