@@ -449,6 +449,67 @@ a:hover {
   }
 }
 
+/* RESEARCH PROJECT GRID */
+
+.project-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Image area */
+
+.project-media {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.project-media img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+/* Text area */
+
+.project-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project-body h3 {
+  margin: 0 0 4px;
+}
+
+.project-body .meta {
+  margin-bottom: 4px;
+}
+
+/* GitHub link styling (works with your existing palette) */
+
+.link-inline {
+  margin-top: 10px;
+  font-size: 0.85rem;
+}
+
+.link-inline a {
+  text-decoration: none;
+}
+
+.link-inline a i {
+  margin-right: 6px;
+}
+
 
 /* FOOTER */
 
