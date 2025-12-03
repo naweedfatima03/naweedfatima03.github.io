@@ -168,19 +168,21 @@ body {
   padding: 0;
   margin-bottom: 40px;
 
-  /* Match GMG card shadow */
-  box-shadow: var(--shadow-soft);
-
-  /* Match GMG gradient accent bar */
-  border-left: 4px solid;
+  /* Outer border JUST like GMG */
+  border: 3px solid transparent;
   border-image: linear-gradient(
-    to bottom,
+    135deg,
     var(--accent),
     var(--accent-pink),
     var(--accent-teal)
   ) 1;
 
-  transition: box-shadow 0.25s ease, transform 0.2s ease;
+  /* Extra left-bar thickness (same as GMG) */
+  border-left-width: 8px;
+
+  /* Shadow + subtle hover lift */
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.2s ease, box-shadow 0.25s ease;
 }
 
 /* Hover effect like GMG */
