@@ -240,36 +240,52 @@
   <!-- Simple slider logic -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      const slides = document.querySelectorAll('.gmg-slide');
-      const prevBtn = document.querySelector('.gmg-prev');
-      const nextBtn = document.querySelector('.gmg-next');
-
-      if (!slides.length || !prevBtn || !nextBtn) return;
-
-      let current = 0;
-
-      function showSlide(index) {
-        slides.forEach((slide, i) => {
-          slide.classList.toggle('active', i === index);
-        });
-      }
-
-      function nextSlide() {
-        current = (current + 1) % slides.length;
-        showSlide(current);
-      }
-
-      function prevSlide() {
-        current = (current - 1 + slides.length) % slides.length;
-        showSlide(current);
-      }
-
-      nextBtn.addEventListener('click', nextSlide);
-      prevBtn.addEventListener('click', prevSlide);
-
-      // Optional: uncomment to auto-advance every 4 seconds
-      setInterval(nextSlide, 2000);
+      const sliders = document.querySelectorAll('.gmg-slider');
+  
+      sliders.forEach(function (slider) {
+        const slides = slider.querySelectorAll('.gmg-slide');
+        const prevBtn = slider.querySelector('.gmg-prev');
+        const nextBtn = slider.querySelector('.gmg-next');
+  
+        if (!slides.length) return;
+  
+        let current = 0;
+  
+        function showSlide(index) {
+          slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+          });
+        }
+  
+        function nextSlide() {
+          current = (current + 1) % slides.length;
+          showSlide(current);
+        }
+  
+        function prevSlide() {
+          current = (current - 1 + slides.length) % slides.length;
+          showSlide(current);
+        }
+  
+        if (nextBtn) {
+          nextBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            nextSlide();
+          });
+        }
+  
+        if (prevBtn) {
+          prevBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            prevSlide();
+          });
+        }
+  
+        // Optional: auto-advance each slider independently
+        // setInterval(nextSlide, 5000);
+      });
     });
   </script>
+  
 </body>
 </html>
