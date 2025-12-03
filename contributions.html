@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contributions | Fatima Naweed</title>
   <link rel="stylesheet" href="styles.css">
-  <!-- Font Awesome (optional, for icons if needed later) -->
+  <!-- Font Awesome (for slider arrows) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -52,32 +52,53 @@
     <!--    GIRLS MAKE GAMES (GMG)    -->
     <!-- =========================== -->
     <section class="contrib-section">
-      <article class="card contrib-block">
-        <h3 class="contrib-heading">Girls Make Games Ambassador</h3>
+      <article class="card gmg-block">
+        <div class="gmg-layout">
 
-        <div class="contrib-entry">
-          <p>
-            As a Girls Make Games Ambassador, I delivered workshops and hands-on sessions introducing
-            young girls to programming, visual computing, and game development. These workshops focused
-            on creativity, technical confidence, and building early exposure to STEM.
-          </p>
-        </div>
+          <!-- LEFT: TEXT -->
+          <div class="gmg-text">
+            <h3 class="contrib-heading">Girls Make Games Ambassador</h3>
 
-        <!-- WORKSHOP LIST -->
-        <div class="contrib-entry">
-          <h4>Workshops Conducted</h4>
-          <ul class="contrib-list">
-            <li><strong>Pak Turk High School</strong> — Game Design Workshop using <strong>Unreal Engine</strong> </li>
-            <li><strong>Mindstorm Studios</strong> — Game Development Workshop using <strong>Unity</strong> </li>
-          </ul>
-        </div>
+            <div class="contrib-entry">
+              <p>
+                As a Girls Make Games Ambassador, I delivered workshops and hands-on sessions introducing
+                young girls to programming, visual computing, and game development. These workshops focused
+                on creativity, technical confidence, and building early exposure to STEM.
+              </p>
+            </div>
 
-        <!-- WORKSHOP PHOTOS -->
-        <div class="workshop-photo-grid">
-          <img src="GMG/MS_Class.JPG" alt="Mindstorm Studios – Game Design Class">
-          <img src="GMG/PT_award.jpg" alt="Pak Turk High School – Award Ceremony">
-          <img src="GMG/PT_class.jpg" alt="Pak Turk High School – Game Design Class">
-          <img src="GMG/MS_group.JPG" alt="Mindstorm Studios – Workshop Group Photo">
+            <div class="contrib-entry">
+              <h4>Workshops Conducted</h4>
+              <ul class="contrib-list">
+                <li><strong>Pak Turk High School</strong> — Game Design Workshop using <strong>Unreal Engine</strong></li>
+                <li><strong>Mindstorm Studios</strong> — Game Development Workshop using <strong>Unity</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- RIGHT: IMAGE SLIDER -->
+          <div class="gmg-slider">
+            <div class="gmg-slide active">
+              <img src="GMG/MS_Class.JPG" alt="Mindstorm Studios – Game Design Class">
+            </div>
+            <div class="gmg-slide">
+              <img src="GMG/MS_group.JPG" alt="Mindstorm Studios – Workshop Group Photo">
+            </div>
+            <div class="gmg-slide">
+              <img src="GMG/PT_class.jpg" alt="Pak Turk High School – Game Design Class">
+            </div>
+            <div class="gmg-slide">
+              <img src="GMG/PT_award.jpg" alt="Pak Turk High School – Award Ceremony">
+            </div>
+
+            <button class="gmg-nav gmg-prev" type="button">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="gmg-nav gmg-next" type="button">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+
         </div>
       </article>
     </section>
@@ -86,5 +107,40 @@
       Last updated: December 2025 · For a full list of activities, see my CV.
     </footer>
   </main>
+
+  <!-- Simple slider logic -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const slides = document.querySelectorAll('.gmg-slide');
+      const prevBtn = document.querySelector('.gmg-prev');
+      const nextBtn = document.querySelector('.gmg-next');
+
+      if (!slides.length || !prevBtn || !nextBtn) return;
+
+      let current = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle('active', i === index);
+        });
+      }
+
+      function nextSlide() {
+        current = (current + 1) % slides.length;
+        showSlide(current);
+      }
+
+      function prevSlide() {
+        current = (current - 1 + slides.length) % slides.length;
+        showSlide(current);
+      }
+
+      nextBtn.addEventListener('click', nextSlide);
+      prevBtn.addEventListener('click', prevSlide);
+
+      // Optional: uncomment to auto-advance every 6 seconds
+      // setInterval(nextSlide, 6000);
+    });
+  </script>
 </body>
 </html>
