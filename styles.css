@@ -553,7 +553,46 @@ AT A GLANCE - 3 Equal Cards
   color: var(--accent-pink);
 }
 
+/* PUBLICATION CARD GRADIENT ACCENTS */
+.pub-card {
+  position: relative;
+  border-left: 4px solid transparent;
+  transition: border 0.25s ease, box-shadow 0.25s ease;
+}
 
+/* Gradient accent bar */
+.pub-card.pub-accent {
+  border-left: 4px solid;
+  border-image: linear-gradient(
+    to bottom,
+    var(--accent), 
+    var(--accent-pink), 
+    var(--accent-teal)
+  ) 1;
+}
+
+/* Hover enhancement */
+.pub-card.pub-accent:hover {
+  box-shadow: 0 14px 28px rgba(15,23,42,0.08);
+  transform: translateY(-2px);
+}
+
+/* Publication title styling */
+.pub-card h3 {
+  font-size: 0.96rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+/* Links styling (already exists but bump vibrance) */
+.pub-card .link-inline a {
+  color: var(--accent-teal);
+  font-weight: 500;
+}
+
+.pub-card .link-inline a:hover {
+  color: var(--accent-pink);
+}
 
 /* =========================================
    FOOTER
