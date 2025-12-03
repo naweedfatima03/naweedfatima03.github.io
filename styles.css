@@ -395,6 +395,32 @@ AT A GLANCE - 3 Equal Cards
   box-shadow: var(--shadow-soft);
 }
 
+/* GMG Workshop Photo Grid */
+.workshop-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.workshop-photo-grid img {
+  width: 100%;
+  height: 260px;               /* Bigger height */
+  object-fit: cover;           /* Fill while cropping aesthetically */
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
+  background: #f9fafb;
+}
+
+/* Larger images on wider screens */
+@media (min-width: 1100px) {
+  .workshop-photo-grid img {
+    height: 320px;             /* Even bigger on large desktop */
+  }
+}
+
+
 
 /* =========================================
    FOOTER
