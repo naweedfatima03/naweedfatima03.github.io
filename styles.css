@@ -171,6 +171,15 @@ body {
   /* Match GMG card shadow */
   box-shadow: var(--shadow-soft);
 
+  /* Outer border JUST like GMG */
+  border: 1px solid transparent;
+  border-image: linear-gradient(
+    135deg,
+    var(--accent),
+    var(--accent-pink),
+    var(--accent-teal)
+  ) 1;
+   
   /* Match GMG gradient accent bar */
   border-left: 4px solid;
   border-image: linear-gradient(
@@ -179,16 +188,6 @@ body {
     var(--accent-pink),
     var(--accent-teal)
   ) 1;
-  border: 1px solid transparent;
-
-   /* Outer border JUST like GMG */
-  
-  /* border-image: linear-gradient(
-    135deg,
-    var(--accent),
-    var(--accent-pink),
-    var(--accent-teal)
-  ) 1; */
 
   transition: box-shadow 0.25s ease, transform 0.2s ease;
 }
