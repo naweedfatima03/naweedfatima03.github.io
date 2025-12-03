@@ -158,55 +158,50 @@ body {
   flex-wrap: wrap;
 }
 
-/* ============================ */
-/*   TEACHING ASSISTANT BLOCK   */
-/* ============================ */
+/* ========================================= */
+/*   TEACHING ASSISTANT BLOCK 
+/* ========================================= */
 
 .ta-block {
+  background: #ffffff;
   border-radius: 18px;
   padding: 0;
   margin-bottom: 40px;
-  background: white;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
 
-  /* Thin gradient border for full card */
-  border: 3px solid transparent;
+  /* Match GMG card shadow */
+  box-shadow: var(--shadow-soft);
+
+  /* Match GMG gradient accent bar */
+  border-left: 4px solid;
   border-image: linear-gradient(
-    135deg,
+    to bottom,
     var(--accent),
     var(--accent-pink),
     var(--accent-teal)
   ) 1;
 
-  /* Add thick left border to match GMG block */
-  border-left-width: 8px;
+  transition: box-shadow 0.25s ease, transform 0.2s ease;
 }
 
-/* Layout */
+/* Hover effect like GMG */
+.ta-block:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.10);
+}
+
 .ta-layout {
-  display: grid;
-  grid-template-columns: 1fr;
   padding: 28px 32px;
-  gap: 24px;
+  display: block;
 }
 
-/* Remove icon layout — full-width text */
-.ta-layout.no-icon {
-  grid-template-columns: 1fr !important;
-  padding: 28px 32px;
-}
-
-/* Meta styling */
 .ta-text .meta {
   margin-bottom: 10px;
   color: var(--muted);
 }
 
-/* Responsive */
 @media (max-width: 760px) {
   .ta-layout {
-    grid-template-columns: 1fr;
-    text-align: left;
+    padding: 22px 20px;
   }
 }
 
