@@ -416,7 +416,7 @@ AT A GLANCE - 3 Equal Cards
 /* Larger images on wider screens */
 @media (min-width: 1100px) {
   .workshop-photo-grid img {
-    height: 320px;             /* Even bigger on large desktop */
+    height: 260px;             /* Even bigger on large desktop */
   }
 }
 
