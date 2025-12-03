@@ -509,6 +509,51 @@ AT A GLANCE - 3 Equal Cards
   }
 }
 
+/* PUBLICATIONS GRID */
+
+.publications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.pub-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 18px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.05);
+}
+
+.pub-card h3 {
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+  font-weight: 500;          /* NOT bold */
+  color: var(--text);
+}
+
+.pub-card .meta {
+  margin-bottom: 6px;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.pub-card .authors {
+  font-size: 0.85rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.pub-card .link-inline a {
+  color: var(--accent-teal);
+}
+
+.pub-card .link-inline a:hover {
+  color: var(--accent-pink);
+}
+
+
 
 /* =========================================
    FOOTER
