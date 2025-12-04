@@ -510,6 +510,85 @@ AT A GLANCE - 3 Equal Cards
   }
 }
 
+/* CONTACT CARD – HORIZONTAL, 3 PILL ROW */
+
+.contact-card {
+  padding: 18px 22px;
+  border-radius: 22px;
+  border: 1px solid var(--border);
+  background:
+    radial-gradient(circle at top left, rgba(255, 138, 61, 0.10), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(0, 191, 166, 0.10), transparent 60%),
+    var(--bg-card-soft);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Row of pills */
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;              /* keep them in one row on desktop */
+  justify-content: space-between; /* spread them nicely */
+  gap: 16px;
+}
+
+/* Each contact item = pill */
+.contact-list li {
+  display: flex;
+  align-items: center;            /* vertically center icon + text */
+  gap: 12px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: #ffffff;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+  flex: 0 1 32%;                  /* three equal-ish pills in a row */
+}
+
+/* Gradient circular icon, perfectly centered */
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    var(--accent),
+    var(--accent-pink),
+    var(--accent-teal)
+  );
+  color: #ffffff;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+/* Link styling */
+.contact-list a {
+  color: var(--accent-teal);
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.contact-list a:hover {
+  color: var(--accent-pink);
+  text-decoration: underline;
+}
+
+/* On smaller screens, stack vertically */
+@media (max-width: 800px) {
+  .contact-list {
+    flex-wrap: wrap;
+  }
+
+  .contact-list li {
+    flex: 1 1 100%;
+  }
+}
+
 
 /* ===== GIRLS MAKE GAMES LAYOUT ===== */
 
@@ -600,85 +679,6 @@ AT A GLANCE - 3 Equal Cards
   }
 }
 
-/* CONTACT CARD – HORIZONTAL PILL ROWS WITH GRADIENT ICONS */
-
-.contact-card {
-  padding: 18px 22px;
-  border-radius: 22px;
-  border: 1px solid var(--border);
-  background:
-    radial-gradient(circle at top left, rgba(255, 138, 61, 0.10), transparent 55%),
-    radial-gradient(circle at bottom right, rgba(0, 191, 166, 0.10), transparent 60%),
-    var(--bg-card-soft);
-  box-shadow: var(--shadow-soft);
-}
-
-/* Horizontal layout for the contact items */
-.contact-list li {
-  display: inline-flex;          /* Inline-flex so height fits exactly */
-  align-items: center;           /* Vertically center icon + text */
-  justify-content: center;       /* Center items horizontally if needed */
-  gap: 12px;
-  padding: 12px 22px;
-  border-radius: 999px;
-  background: #ffffff;
-  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
-  flex: 1 1 auto;
-  min-width: 260px;
-}
-
-/* Each item is a pill */
-.contact-list li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 18px;
-  border-radius: 999px;
-  background: #ffffff;
-  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
-  flex: 1 1 auto;           /* grow nicely, shrink if needed */
-  min-width: 260px;         /* so they don't get too tiny */
-}
-
-/* Gradient circular icons */
-.contact-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 999px;
-  display: flex;                 /* Ensure full centering */
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(
-    135deg,
-    var(--accent),
-    var(--accent-pink),
-    var(--accent-teal)
-  );
-  color: #ffffff;
-  font-size: 1rem;
-  flex-shrink: 0;
-}
-
-/* Links inside contact pills */
-.contact-list a {
-  color: var(--accent-teal);
-  font-weight: 500;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.contact-list a:hover {
-  color: var(--accent-pink);
-  text-decoration: underline;
-}
-
-/* On very narrow screens, let them stack cleanly */
-@media (max-width: 640px) {
-  .contact-list li {
-    width: 100%;
-    min-width: 0;
-  }
-}
 
 /* PUBLICATIONS GRID */
 
