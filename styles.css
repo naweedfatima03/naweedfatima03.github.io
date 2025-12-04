@@ -564,7 +564,7 @@ AT A GLANCE - 3 Equal Cards
   font-size: 1.3rem;      /* tweak size if you like */
   flex-shrink: 0;
   position: relative;
-  top: 6px;      /* move icon down */
+  top: 20px;      /* move icon down */
 }
 
 /* Link styling */
