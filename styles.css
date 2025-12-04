@@ -565,6 +565,15 @@ AT A GLANCE - 3 Equal Cards
   flex-shrink: 0;
 }
 
+/* Fix Font Awesome icon vertical centering inside gradient circle */
+.contact-icon i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(1px); /* adjust up/down until perfectly centered */
+  font-size: 1rem;
+}
+
 /* Link styling */
 .contact-list a {
   color: var(--accent-teal);
