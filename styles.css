@@ -573,12 +573,12 @@ AT A GLANCE - 3 Equal Cards
   display: flex;
   justify-content: center;
   align-items: flex-start; /* lets us shift the icon downward */
-  padding-top: 14px;       /* adjust icon vertical offset */
+  padding-top: 12px;       /* adjust icon vertical offset */
   flex-shrink: 0;
 }
 
 .contact-icon-wrapper i {
-  font-size: 24px;
+  font-size: 20px;
   color: white;
 }
 
