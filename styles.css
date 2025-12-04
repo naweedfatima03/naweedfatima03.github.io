@@ -371,6 +371,18 @@ section h2 {
   text-decoration: underline;
 }
 
+.accent-link {
+  color: var(--accent-strong);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.accent-link:hover {
+  color: var(--accent-pink);
+  text-decoration: underline;
+}
+
+
 /* =========================================
 AT A GLANCE - 3 Equal Cards
 ========================================= */
