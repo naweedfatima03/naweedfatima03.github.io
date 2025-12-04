@@ -559,14 +559,15 @@ AT A GLANCE - 3 Equal Cards
     var(--accent-pink),
     var(--accent-teal)
   );
-  color: white; /* ensures visible icon */
+  color: white;
 }
 
 .contact-icon i {
-  font-size: 1.2rem;
-  line-height: 0; /* perfect vertical centering */
-  transform: translateY(150px); /* adjust slightly if needed */
-  transform: translateX(50px);
+  font-size: 1.25rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Link styling */
