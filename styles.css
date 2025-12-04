@@ -565,6 +565,24 @@ AT A GLANCE - 3 Equal Cards
   flex-shrink: 0;
 }
 
+.contact-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-pink), var(--accent-teal));
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* lets us shift the icon downward */
+  padding-top: 14px;       /* adjust icon vertical offset */
+  flex-shrink: 0;
+}
+
+.contact-icon-wrapper i {
+  font-size: 24px;
+  color: white;
+}
+
+
 /* Link styling */
 .contact-list a {
   color: var(--accent-teal);
