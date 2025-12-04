@@ -546,11 +546,10 @@ AT A GLANCE - 3 Equal Cards
   flex: 0 1 32%;                  /* three equal-ish pills in a row */
 }
 
-/* Gradient circular icon, perfectly centered */
 .contact-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 999px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -560,19 +559,13 @@ AT A GLANCE - 3 Equal Cards
     var(--accent-pink),
     var(--accent-teal)
   );
-  color: #ffffff;
-  font-size: 1.1rem;
-  flex-shrink: 0;
 }
 
-/* Fix Font Awesome icon vertical centering inside gradient circle */
 .contact-icon i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(1px); /* adjust up/down until perfectly centered */
-  font-size: 1rem;
+  font-size: 1.15rem;
+  line-height: 0; /* forces Font Awesome to sit dead center */
 }
+
 
 /* Link styling */
 .contact-list a {
