@@ -614,13 +614,17 @@ AT A GLANCE - 3 Equal Cards
 }
 
 /* Horizontal layout for the contact items */
-.contact-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
+.contact-list li {
+  display: inline-flex;          /* Inline-flex so height fits exactly */
+  align-items: center;           /* Vertically center icon + text */
+  justify-content: center;       /* Center items horizontally if needed */
+  gap: 12px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: #ffffff;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+  flex: 1 1 auto;
+  min-width: 260px;
 }
 
 /* Each item is a pill */
@@ -638,13 +642,12 @@ AT A GLANCE - 3 Equal Cards
 
 /* Gradient circular icons */
 .contact-icon {
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   border-radius: 999px;
-  display: inline-flex;
+  display: flex;                 /* Ensure full centering */
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
   background: linear-gradient(
     135deg,
     var(--accent),
@@ -653,6 +656,7 @@ AT A GLANCE - 3 Equal Cards
   );
   color: #ffffff;
   font-size: 1rem;
+  flex-shrink: 0;
 }
 
 /* Links inside contact pills */
