@@ -546,28 +546,23 @@ AT A GLANCE - 3 Equal Cards
   flex: 0 1 32%;                  /* three equal-ish pills in a row */
 }
 
+/* CONTACT ICON – centered in the gradient circle */
 .contact-icon {
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: linear-gradient(
     135deg,
     var(--accent),
     var(--accent-pink),
     var(--accent-teal)
   );
-  color: white;
-}
-
-.contact-icon i {
-  font-size: 1.25rem;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  line-height: 46px;      /* vertically centers the glyph */
+  font-size: 1.3rem;      /* tweak size if you like */
+  flex-shrink: 0;
 }
 
 /* Link styling */
