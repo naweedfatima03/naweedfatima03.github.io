@@ -372,25 +372,38 @@ section h2 {
 }
 
 .accent-link {
-  display: inline-block;
-  padding: 6px 14px;
-  border-radius: 999px;
+  color: var(--accent-teal);
   font-weight: 600;
   text-decoration: none;
-  color: var(--accent-strong);
-  border: 2px solid transparent;
-  background:
-    linear-gradient(var(--surface), var(--surface)) padding-box,
-    linear-gradient(135deg, var(--accent), var(--accent-pink), var(--accent-teal)) border-box;
-  transition: 0.25s ease;
+  position: relative;
+  padding-bottom: 2px; /* space for underline */
+  transition: color 0.25s ease;
 }
 
+/* Gradient underline on hover */
+.accent-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(
+    to right,
+    var(--accent),
+    var(--accent-pink),
+    var(--accent-teal)
+  );
+  transition: width 0.25s ease;
+}
+
+/* Hover effects */
 .accent-link:hover {
-  color: white;
-  background:
-    linear-gradient(135deg, var(--accent), var(--accent-pink), var(--accent-teal)) padding-box,
-    linear-gradient(135deg, var(--accent), var(--accent-pink), var(--accent-teal)) border-box;
-  text-decoration: none;
+  color: var(--accent-strong); /* optional slight color shift */
+}
+
+.accent-link:hover::after {
+  width: 100%;
 }
 
 /* =========================================
