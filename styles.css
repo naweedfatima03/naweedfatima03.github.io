@@ -565,7 +565,7 @@ AT A GLANCE - 3 Equal Cards
 .contact-icon i {
   font-size: 1.2rem;
   line-height: 0; /* perfect vertical centering */
-  transform: translateY(10px); /* adjust slightly if needed */
+  transform: translateY(50px); /* adjust slightly if needed */
 }
 
 /* Link styling */
