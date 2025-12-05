@@ -716,7 +716,7 @@ AT A GLANCE - 3 Equal Cards
 }
 
 /* GRADIENT ACCENT FOR GMG CARD */
-.gmg-accent {
+/* .gmg-accent {
   border-left: 4px solid;
   border-image: linear-gradient(
     to bottom,
@@ -725,6 +725,16 @@ AT A GLANCE - 3 Equal Cards
     var(--accent-teal)
   ) 1;
   transition: border 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+} */
+.gmg-accent {
+  border-left: 4px solid transparent;
+  border-image: linear-gradient(
+    to bottom,
+    var(--accent),
+    var(--accent-pink),
+    var(--accent-teal)
+  ) 1;
+  border-image-slice: 1;
 }
 
 .gmg-accent:hover {
