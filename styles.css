@@ -667,7 +667,7 @@ AT A GLANCE - 3 Equal Cards
 .gmg-text {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 6px;
 }
 
 .gmg-text h3.contrib-heading {
