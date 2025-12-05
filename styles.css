@@ -716,16 +716,7 @@ AT A GLANCE - 3 Equal Cards
 }
 
 /* GRADIENT ACCENT FOR GMG CARD */
-/* .gmg-accent {
-  border-left: 4px solid;
-  border-image: linear-gradient(
-    to bottom,
-    var(--accent),
-    var(--accent-pink),
-    var(--accent-teal)
-  ) 1;
-  transition: border 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
-} */
+
 .gmg-accent {
   border-left: 4px solid transparent;
   border-image: linear-gradient(
@@ -734,12 +725,14 @@ AT A GLANCE - 3 Equal Cards
     var(--accent-pink),
     var(--accent-teal)
   ) 1;
-  /* border-image-slice: 1; */
+  border-image-slice: 1;
 }
 
-/* .card.gmg-accent { */
-  /* border: none;   /* remove the card’s default borders */ */
-/* } */
+.card.gmg-accent {
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
 
 .gmg-accent:hover {
   box-shadow: 0 14px 28px rgba(15, 23, 42, 0.10);
