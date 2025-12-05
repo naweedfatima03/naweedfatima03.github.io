@@ -760,7 +760,7 @@ AT A GLANCE - 3 Equal Cards
 
 .pub-card {
   background: var(--bg-card);
-  border: 1px solid var(--border);
+  /* border: 1px solid var(--border); */
   border-radius: 2px;
   padding: 16px 18px;
   /* box-shadow: 0 10px 22px rgba(0, 0, 0, 0.05); */
