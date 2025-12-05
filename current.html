@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Current Work | Fatima Naweed</title>
   <link rel="stylesheet" href="styles.css">
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
   <header class="site-header">
     <div class="site-header-inner">
@@ -25,189 +25,184 @@
   </header>
 
   <main class="page">
-    <!-- PAGE HEADER -->
+
+    <!-- INTRO -->
     <section>
       <h2>Current Work</h2>
       <p class="section-intro">
-        Selected projects from my role as a Computer Vision Engineer and engineering lead for Trials (R&amp;D),
-        focusing on multi-modal perception, city-scale deployments, and embedded systems.
+        Selected engineering-led projects focusing on multimodal perception, city-scale deployments,
+        real-time embedded systems, and traffic analytics — as part of my work at Obvio, Inc.
       </p>
     </section>
 
-    <!-- SECTION 1: Sentinel -->
+    <!-- SECTION 1: Washington, D.C. Citywide Study -->
     <section class="contrib-section">
       <article class="card gmg-block gmg-accent">
         <div class="gmg-layout">
 
-          <!-- TEXT COLUMN -->
+          <!-- TEXT -->
           <div class="gmg-text">
-            <h3 class="contrib-heading">Sentinel</h3>
-            <h4 class="contrib-heading">Embedded Vision Stack for Traffic Enforcement</h4>
+            <h3 class="contrib-heading">Washington, D.C. Citywide Traffic Violation Study</h3>
+            <h4 class="contrib-heading">Multi-Corridor Analysis of Distracted Driving</h4>
+            <div class="project-divider"></div>
+
+            <div class="contrib-entry">
+              <p class="meta">Obvio, Inc. · Trials & Analytics</p>
+              <p>
+                Conducted a citywide distracted-driving study across 30+ high-traffic corridors
+                in collaboration with DDOT, combining multimodal edge capture with a custom 
+                data-review and validation interface.
+              </p>
+              <ul class="contrib-list">
+                <li>Developed real-time multimodal data-capture tooling on Thundercomm devices.</li>
+                <li>Built vision-based detection and identity-obfuscation pipelines for violations.</li>
+                <li>Managed hardware deployments and AWS S3 dataset infrastructure.</li>
+                <li>Quantified violation prevalence, identifying distracted driving rates up to 20% at major intersections.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- SLIDER -->
+          <div class="gmg-slider">
+            <div class="gmg-slide active">
+              <img src="img/placeholder1.jpg" alt="Citywide violation study placeholder">
+            </div>
+            <div class="gmg-slide">
+              <img src="img/placeholder2.jpg" alt="Citywide violation study placeholder">
+            </div>
+
+            <button class="gmg-nav gmg-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="gmg-nav gmg-next"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- SECTION 2: License Plate Visibility & Exposure -->
+    <section class="contrib-section">
+      <article class="card gmg-block gmg-accent">
+        <div class="gmg-layout">
+
+          <!-- TEXT -->
+          <div class="gmg-text">
+            <h3 class="contrib-heading">License Plate Visibility & Exposure Management</h3>
+            <h4 class="contrib-heading">Improving Evidence Quality Across Deployments</h4>
+            <div class="project-divider"></div>
+
+            <div class="contrib-entry">
+              <p class="meta">Obvio, Inc. · Evidence Quality</p>
+              <p>
+                Designed deployment-wide monitoring tools to evaluate license-plate visibility
+                and exposure performance, reducing evidence rejection rates from 15% to 5%
+                across production sites.
+              </p>
+              <ul class="contrib-list">
+                <li>Engineered OCR-based readability and Laplace-based visibility metrics.</li>
+                <li>Benchmarked manual vs. automated exposure scheduling across 40+ deployments.</li>
+                <li>Created a Retool annotation platform for validating exposure metrics.</li>
+                <li>Built Redash dashboards to track performance and guide field adjustments.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- SLIDER -->
+          <div class="gmg-slider">
+            <div class="gmg-slide active">
+              <img src="img/placeholder2.jpg" alt="Exposure management placeholder">
+            </div>
+            <div class="gmg-slide">
+              <img src="img/placeholder3.jpg" alt="Exposure management placeholder">
+            </div>
+
+            <button class="gmg-nav gmg-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="gmg-nav gmg-next"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+
+        </div>
+      </article>
+    </section>
+
+    <!-- SECTION 3: Sentinel Vision Stack -->
+    <section class="contrib-section">
+      <article class="card gmg-block gmg-accent">
+        <div class="gmg-layout">
+
+          <!-- TEXT -->
+          <div class="gmg-text">
+            <h3 class="contrib-heading">Sentinel: C++ Embedded Vision Stack</h3>
+            <h4 class="contrib-heading">Real-Time Detection, Tracking & Behaviour Classification</h4>
             <div class="project-divider"></div>
 
             <div class="contrib-entry">
               <p class="meta">Obvio, Inc. · Engineering Lead</p>
               <p>
-                Co-architecting a modular C++ perception stack for multi-lane traffic enforcement, integrating
-                detection, tracking, and evidence generation for large-scale roadside deployments.
+                Contributed to system-architecture design for Sentinel, resolving bottlenecks in inference,
+                video quality, and event throughput through optimized modular refactoring and efficient memory management.
               </p>
               <ul class="contrib-list">
-                <li>Designing a pluggable pipeline for multi-camera, multi-lane setups.</li>
-                <li>Owning inference, tracking, and event aggregation on embedded hardware.</li>
-                <li>Coordinating rollout for pilots across multiple city corridors.</li>
+                <li>Implemented the full C++ vision stack on Thundercomm hardware.</li>
+                <li>Integrated SNPE inference, BYTE Tracker, and behaviour classification.</li>
+                <li>Achieved stable 30 FPS throughput across 20+ production deployments.</li>
+                <li>System now supports 50+ live installations generating traffic enforcement evidence.</li>
               </ul>
             </div>
           </div>
 
-          <!-- SLIDER COLUMN -->
+          <!-- SLIDER -->
           <div class="gmg-slider">
             <div class="gmg-slide active">
-              <img src="img/sentinel-stack.jpg" alt="Sentinel embedded vision stack for traffic enforcement">
+              <img src="img/placeholder3.jpg" alt="Sentinel embedded vision placeholder">
             </div>
-            <!-- Add more slides if you have more photos
             <div class="gmg-slide">
-              <img src="img/sentinel-stack-2.jpg" alt="Additional Sentinel deployment photo">
+              <img src="img/placeholder4.jpg" alt="Sentinel embedded vision placeholder">
             </div>
-            -->
 
-            <button class="gmg-nav gmg-prev" type="button" aria-label="Previous Sentinel photo">
-              <i class="fa-solid fa-chevron-left"></i>
-            </button>
-            <button class="gmg-nav gmg-next" type="button" aria-label="Next Sentinel photo">
-              <i class="fa-solid fa-chevron-right"></i>
-            </button>
+            <button class="gmg-nav gmg-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="gmg-nav gmg-next"><i class="fa-solid fa-chevron-right"></i></button>
           </div>
 
         </div>
       </article>
     </section>
 
-    <!-- SECTION 2: Vision-Only Speed Estimation -->
+    <!-- SECTION 4: Trials & R&D -->
     <section class="contrib-section">
       <article class="card gmg-block gmg-accent">
         <div class="gmg-layout">
 
-          <!-- TEXT COLUMN -->
+          <!-- TEXT -->
           <div class="gmg-text">
-            <h3 class="contrib-heading">Vision-Only Speed Estimation</h3>
-            <h4 class="contrib-heading">Monocular, Bi-Directional Speed Pipeline</h4>
+            <h3 class="contrib-heading">Trials: Research & Development</h3>
+            <h4 class="contrib-heading">Cross-Functional Pilots & Multimodal Capture</h4>
             <div class="project-divider"></div>
 
             <div class="contrib-entry">
-              <p class="meta">Obvio, Inc. · Patent under submission</p>
+              <p class="meta">Obvio, Inc. · Trials (R&D)</p>
               <p>
-                Designing a monocular, bi-directional speed estimation pipeline using 3D scene reasoning and
-                robust calibration to support camera-only deployments across diverse sites.
+                Coordinating cross-functional pilots involving hardware validation, embedded testing,
+                backend infrastructure optimization, and end-to-end violation analytics.
               </p>
               <ul class="contrib-list">
-                <li>Calibrating fixed CCTV views into real-world coordinates using 3D geometry.</li>
-                <li>Estimating vehicle speeds in both directions without radar or loops.</li>
-                <li>Validating accuracy on heterogeneous corridors and weather conditions.</li>
+                <li>Led 20+ engineers, annotators, and technicians across trial workflows.</li>
+                <li><strong>Scout App:</strong> Android-based multimodal capture using UVC cameras and 1D radars.</li>
+                <li><strong>Vision-Based Speeding:</strong> Designed a monocular bidirectional speed system validated across 30+ sites.</li>
+                <li>Supported experimentation of model variants and sensor configurations.</li>
               </ul>
             </div>
           </div>
 
-          <!-- SLIDER COLUMN -->
+          <!-- SLIDER -->
           <div class="gmg-slider">
             <div class="gmg-slide active">
-              <img src="img/speed-estimation.jpg" alt="Monocular speed estimation visualisation">
-            </div>
-            <!-- Add extra slides here if you have more imagery -->
-
-            <button class="gmg-nav gmg-prev" type="button" aria-label="Previous speed estimation photo">
-              <i class="fa-solid fa-chevron-left"></i>
-            </button>
-            <button class="gmg-nav gmg-next" type="button" aria-label="Next speed estimation photo">
-              <i class="fa-solid fa-chevron-right"></i>
-            </button>
-          </div>
-
-        </div>
-      </article>
-    </section>
-
-    <!-- SECTION 3: Distracted Driving Study -->
-    <section class="contrib-section">
-      <article class="card gmg-block gmg-accent">
-        <div class="gmg-layout">
-
-          <!-- TEXT COLUMN -->
-          <div class="gmg-text">
-            <h3 class="contrib-heading">City-Scale Distracted Driving Study</h3>
-            <h4 class="contrib-heading">Trials &amp; Analytics for Policy Insights</h4>
-            <div class="project-divider"></div>
-
-            <div class="contrib-entry">
-              <p class="meta">Washington, D.C. · Trials &amp; Analytics</p>
-              <p>
-                Leading perception and data pipelines for a multi-corridor study on distracted driving and
-                violations, combining edge capture with privacy-aware analytics.
-              </p>
-              <ul class="contrib-list">
-                <li>Building temporal monitoring for phone usage, seatbelts, and other behaviours.</li>
-                <li>Curating anonymised aggregates for transport departments and policy teams.</li>
-                <li>Coordinating model updates and QA across multiple test deployments.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- SLIDER COLUMN -->
-          <div class="gmg-slider">
-            <div class="gmg-slide active">
-              <img src="img/distracted-driving.jpg" alt="City-scale distracted driving camera view">
-            </div>
-            <!-- More slides can be added here -->
-
-            <button class="gmg-nav gmg-prev" type="button" aria-label="Previous distracted driving photo">
-              <i class="fa-solid fa-chevron-left"></i>
-            </button>
-            <button class="gmg-nav gmg-next" type="button" aria-label="Next distracted driving photo">
-              <i class="fa-solid fa-chevron-right"></i>
-            </button>
-          </div>
-
-        </div>
-      </article>
-    </section>
-
-    <!-- SECTION 4: Trials & R&D Pilots (placeholder section you can tweak) -->
-    <section class="contrib-section">
-      <article class="card gmg-block gmg-accent">
-        <div class="gmg-layout">
-
-          <!-- TEXT COLUMN -->
-          <div class="gmg-text">
-            <h3 class="contrib-heading">Trials &amp; R&amp;D Pilots</h3>
-            <h4 class="contrib-heading">Multi-Site, Multi-Modal Deployments</h4>
-            <div class="project-divider"></div>
-
-            <div class="contrib-entry">
-              <p class="meta">Obvio, Inc. · Trials (R&amp;D)</p>
-              <p>
-                Coordinating experimental pilots that stress-test new perception features, sensor combinations,
-                and deployment configurations before they transition into production.
-              </p>
-              <ul class="contrib-list">
-                <li>Designing experiments for new detection tasks and multi-sensor fusion.</li>
-                <li>Running A/B trials on model variants in live traffic environments.</li>
-                <li>Translating trial outcomes into product requirements and roadmaps.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- SLIDER COLUMN -->
-          <div class="gmg-slider">
-            <!-- Replace the image path with whatever you like (placeholder for now) -->
-            <div class="gmg-slide active">
-              <img src="img/trials-generic.jpg" alt="R&amp;D trial deployment (placeholder)">
+              <img src="img/placeholder4.jpg" alt="Trials R&D placeholder">
             </div>
 
-            <button class="gmg-nav gmg-prev" type="button" aria-label="Previous trials photo">
-              <i class="fa-solid fa-chevron-left"></i>
-            </button>
-            <button class="gmg-nav gmg-next" type="button" aria-label="Next trials photo">
-              <i class="fa-solid fa-chevron-right"></i>
-            </button>
+            <div class="gmg-slide">
+              <img src="img/placeholder1.jpg" alt="Trials R&D placeholder">
+            </div>
+
+            <button class="gmg-nav gmg-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="gmg-nav gmg-next"><i class="fa-solid fa-chevron-right"></i></button>
           </div>
 
         </div>
@@ -217,44 +212,36 @@
     <footer>
       Last updated: December 2025 · For a full list of projects, see my CV.
     </footer>
+
   </main>
 
-  <!-- Lightweight slider script (re-usable for all GMG sliders) -->
+  <!-- SLIDER SCRIPT -->
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      document.querySelectorAll('.gmg-slider').forEach(function (slider) {
-        const slides = slider.querySelectorAll('.gmg-slide');
-        if (!slides.length) return;
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".gmg-slider").forEach(slider => {
+        const slides = slider.querySelectorAll(".gmg-slide");
+        let idx = 0;
 
-        let index = 0;
-
-        function show(i) {
-          slides.forEach((slide, idx) => {
-            slide.classList.toggle('active', idx === i);
+        const show = i => {
+          slides.forEach((s, j) => {
+            s.classList.toggle("active", j === i);
           });
-        }
+        };
 
-        const prevBtn = slider.querySelector('.gmg-prev');
-        const nextBtn = slider.querySelector('.gmg-next');
+        slider.querySelector(".gmg-prev")?.addEventListener("click", () => {
+          idx = (idx - 1 + slides.length) % slides.length;
+          show(idx);
+        });
 
-        if (prevBtn) {
-          prevBtn.addEventListener('click', function () {
-            index = (index - 1 + slides.length) % slides.length;
-            show(index);
-          });
-        }
+        slider.querySelector(".gmg-next")?.addEventListener("click", () => {
+          idx = (idx + 1) % slides.length;
+          show(idx);
+        });
 
-        if (nextBtn) {
-          nextBtn.addEventListener('click', function () {
-            index = (index + 1) % slides.length;
-            show(index);
-          });
-        }
-
-        // Ensure the first slide is visible
         show(0);
       });
     });
   </script>
+
 </body>
 </html>
