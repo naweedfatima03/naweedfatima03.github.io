@@ -800,6 +800,19 @@ AT A GLANCE - 3 Equal Cards
   color: var(--accent-pink);
 }
 
+.project-divider {
+  margin: 6px 0 10px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(
+    to right,
+    var(--accent),
+    var(--accent-pink),
+    var(--accent-teal)
+  );
+  opacity: 0.65; /* softer look */
+}
+
 /* =========================================
    FOOTER
 ========================================= */
