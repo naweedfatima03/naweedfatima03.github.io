@@ -670,6 +670,15 @@ AT A GLANCE - 3 Equal Cards
   gap: 14px;
 }
 
+.gmg-text h3.contrib-heading {
+  margin-bottom: 2px;
+}
+
+.gmg-text h4.contrib-heading {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
 /* Slider container */
 .gmg-slider {
   position: relative;
