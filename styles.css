@@ -775,7 +775,7 @@ AT A GLANCE - 3 Equal Cards
 }
 
 /* Gradient accent bar */
-.pub-card.pub-accent {
+/* .pub-card.pub-accent {
   border-left: 4px solid;
   border-image: linear-gradient(
     to bottom,
@@ -783,7 +783,7 @@ AT A GLANCE - 3 Equal Cards
     var(--accent-pink), 
     var(--accent-teal)
   ) 1;
-}
+} */
 
 /* Hover enhancement */
 .pub-card.pub-accent:hover {
