@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Current Work | Fatima Naweed</title>
   <link rel="stylesheet" href="styles.css">
-  <!-- Font Awesome (if you want icons anywhere) -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -34,78 +34,227 @@
       </p>
     </section>
 
-    <!-- PROJECT GRID -->
-    <section>
-      <div class="project-grid">
+    <!-- SECTION 1: Sentinel -->
+    <section class="contrib-section">
+      <article class="card gmg-block gmg-accent">
+        <div class="gmg-layout">
 
-        <!-- PROJECT CARD 1 -->
-        <article class="card project-card">
-          <div class="project-media">
-            <!-- Replace with your own image -->
-            <img src="img/sentinel-stack.jpg" alt="Embedded vision stack for traffic enforcement">
-          </div>
-          <div class="project-body">
-            <h3>Sentinel: Embedded Vision Stack for Traffic Enforcement</h3>
-            <p class="meta">Obvio, Inc. · Engineering Lead</p>
-            <p>
-              Co-architecting a modular C++ perception stack for multi-lane traffic enforcement, integrating
-              detection, tracking, and evidence generation for large-scale deployments.
-            </p>
-            <div class="pill-row">
-              <span class="pill">Embedded vision</span>
-              <span class="pill">Real-time inference</span>
-              <span class="pill">Systems design</span>
+          <!-- TEXT COLUMN -->
+          <div class="gmg-text">
+            <h3 class="contrib-heading">Sentinel</h3>
+            <h4 class="contrib-heading">Embedded Vision Stack for Traffic Enforcement</h4>
+            <div class="project-divider"></div>
+
+            <div class="contrib-entry">
+              <p class="meta">Obvio, Inc. · Engineering Lead</p>
+              <p>
+                Co-architecting a modular C++ perception stack for multi-lane traffic enforcement, integrating
+                detection, tracking, and evidence generation for large-scale roadside deployments.
+              </p>
+              <ul class="contrib-list">
+                <li>Designing a pluggable pipeline for multi-camera, multi-lane setups.</li>
+                <li>Owning inference, tracking, and event aggregation on embedded hardware.</li>
+                <li>Coordinating rollout for pilots across multiple city corridors.</li>
+              </ul>
             </div>
           </div>
-        </article>
 
-        <!-- PROJECT CARD 2 -->
-        <article class="card project-card">
-          <div class="project-media">
-            <img src="img/speed-estimation.jpg" alt="Vision-only speed estimation pipeline">
+          <!-- SLIDER COLUMN -->
+          <div class="gmg-slider">
+            <div class="gmg-slide active">
+              <img src="img/sentinel-stack.jpg" alt="Sentinel embedded vision stack for traffic enforcement">
+            </div>
+            <!-- Add more slides if you have more photos
+            <div class="gmg-slide">
+              <img src="img/sentinel-stack-2.jpg" alt="Additional Sentinel deployment photo">
+            </div>
+            -->
+
+            <button class="gmg-nav gmg-prev" type="button" aria-label="Previous Sentinel photo">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="gmg-nav gmg-next" type="button" aria-label="Next Sentinel photo">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
           </div>
-          <div class="project-body">
-            <h3>Vision-Only Speed Estimation</h3>
-            <p class="meta">Obvio, Inc. · Patent under submission</p>
-            <p>
-              Designing a monocular, bi-directional speed estimation pipeline using 3D scene reasoning and
-              robust calibration to support camera-only deployments across diverse sites.
-            </p>
-            <div class="pill-row">
-              <span class="pill">3D reasoning</span>
-              <span class="pill">Monocular vision</span>
-              <span class="pill">City-scale pilots</span>
+
+        </div>
+      </article>
+    </section>
+
+    <!-- SECTION 2: Vision-Only Speed Estimation -->
+    <section class="contrib-section">
+      <article class="card gmg-block gmg-accent">
+        <div class="gmg-layout">
+
+          <!-- TEXT COLUMN -->
+          <div class="gmg-text">
+            <h3 class="contrib-heading">Vision-Only Speed Estimation</h3>
+            <h4 class="contrib-heading">Monocular, Bi-Directional Speed Pipeline</h4>
+            <div class="project-divider"></div>
+
+            <div class="contrib-entry">
+              <p class="meta">Obvio, Inc. · Patent under submission</p>
+              <p>
+                Designing a monocular, bi-directional speed estimation pipeline using 3D scene reasoning and
+                robust calibration to support camera-only deployments across diverse sites.
+              </p>
+              <ul class="contrib-list">
+                <li>Calibrating fixed CCTV views into real-world coordinates using 3D geometry.</li>
+                <li>Estimating vehicle speeds in both directions without radar or loops.</li>
+                <li>Validating accuracy on heterogeneous corridors and weather conditions.</li>
+              </ul>
             </div>
           </div>
-        </article>
 
-        <!-- PROJECT CARD 3 -->
-        <article class="card project-card">
-          <div class="project-media">
-            <img src="img/distracted-driving.jpg" alt="City-scale distracted driving study">
+          <!-- SLIDER COLUMN -->
+          <div class="gmg-slider">
+            <div class="gmg-slide active">
+              <img src="img/speed-estimation.jpg" alt="Monocular speed estimation visualisation">
+            </div>
+            <!-- Add extra slides here if you have more imagery -->
+
+            <button class="gmg-nav gmg-prev" type="button" aria-label="Previous speed estimation photo">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="gmg-nav gmg-next" type="button" aria-label="Next speed estimation photo">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
           </div>
-          <div class="project-body">
-            <h3>City-Scale Distracted Driving Study</h3>
-            <p class="meta">Washington, D.C. · Trials &amp; Analytics</p>
-            <p>
-              Leading perception and data pipelines for a multi-corridor study on distracted driving and
-              violations, combining edge capture with privacy-aware analytics.
-            </p>
-            <div class="pill-row">
-              <span class="pill">Temporal monitoring</span>
-              <span class="pill">Urban analytics</span>
-              <span class="pill">Policy-facing insights</span>
+
+        </div>
+      </article>
+    </section>
+
+    <!-- SECTION 3: Distracted Driving Study -->
+    <section class="contrib-section">
+      <article class="card gmg-block gmg-accent">
+        <div class="gmg-layout">
+
+          <!-- TEXT COLUMN -->
+          <div class="gmg-text">
+            <h3 class="contrib-heading">City-Scale Distracted Driving Study</h3>
+            <h4 class="contrib-heading">Trials &amp; Analytics for Policy Insights</h4>
+            <div class="project-divider"></div>
+
+            <div class="contrib-entry">
+              <p class="meta">Washington, D.C. · Trials &amp; Analytics</p>
+              <p>
+                Leading perception and data pipelines for a multi-corridor study on distracted driving and
+                violations, combining edge capture with privacy-aware analytics.
+              </p>
+              <ul class="contrib-list">
+                <li>Building temporal monitoring for phone usage, seatbelts, and other behaviours.</li>
+                <li>Curating anonymised aggregates for transport departments and policy teams.</li>
+                <li>Coordinating model updates and QA across multiple test deployments.</li>
+              </ul>
             </div>
           </div>
-        </article>
 
-      </div>
+          <!-- SLIDER COLUMN -->
+          <div class="gmg-slider">
+            <div class="gmg-slide active">
+              <img src="img/distracted-driving.jpg" alt="City-scale distracted driving camera view">
+            </div>
+            <!-- More slides can be added here -->
+
+            <button class="gmg-nav gmg-prev" type="button" aria-label="Previous distracted driving photo">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="gmg-nav gmg-next" type="button" aria-label="Next distracted driving photo">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+
+        </div>
+      </article>
+    </section>
+
+    <!-- SECTION 4: Trials & R&D Pilots (placeholder section you can tweak) -->
+    <section class="contrib-section">
+      <article class="card gmg-block gmg-accent">
+        <div class="gmg-layout">
+
+          <!-- TEXT COLUMN -->
+          <div class="gmg-text">
+            <h3 class="contrib-heading">Trials &amp; R&amp;D Pilots</h3>
+            <h4 class="contrib-heading">Multi-Site, Multi-Modal Deployments</h4>
+            <div class="project-divider"></div>
+
+            <div class="contrib-entry">
+              <p class="meta">Obvio, Inc. · Trials (R&amp;D)</p>
+              <p>
+                Coordinating experimental pilots that stress-test new perception features, sensor combinations,
+                and deployment configurations before they transition into production.
+              </p>
+              <ul class="contrib-list">
+                <li>Designing experiments for new detection tasks and multi-sensor fusion.</li>
+                <li>Running A/B trials on model variants in live traffic environments.</li>
+                <li>Translating trial outcomes into product requirements and roadmaps.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- SLIDER COLUMN -->
+          <div class="gmg-slider">
+            <!-- Replace the image path with whatever you like (placeholder for now) -->
+            <div class="gmg-slide active">
+              <img src="img/trials-generic.jpg" alt="R&amp;D trial deployment (placeholder)">
+            </div>
+
+            <button class="gmg-nav gmg-prev" type="button" aria-label="Previous trials photo">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="gmg-nav gmg-next" type="button" aria-label="Next trials photo">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+
+        </div>
+      </article>
     </section>
 
     <footer>
       Last updated: December 2025 · For a full list of projects, see my CV.
     </footer>
   </main>
+
+  <!-- Lightweight slider script (re-usable for all GMG sliders) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.gmg-slider').forEach(function (slider) {
+        const slides = slider.querySelectorAll('.gmg-slide');
+        if (!slides.length) return;
+
+        let index = 0;
+
+        function show(i) {
+          slides.forEach((slide, idx) => {
+            slide.classList.toggle('active', idx === i);
+          });
+        }
+
+        const prevBtn = slider.querySelector('.gmg-prev');
+        const nextBtn = slider.querySelector('.gmg-next');
+
+        if (prevBtn) {
+          prevBtn.addEventListener('click', function () {
+            index = (index - 1 + slides.length) % slides.length;
+            show(index);
+          });
+        }
+
+        if (nextBtn) {
+          nextBtn.addEventListener('click', function () {
+            index = (index + 1) % slides.length;
+            show(index);
+          });
+        }
+
+        // Ensure the first slide is visible
+        show(0);
+      });
+    });
+  </script>
 </body>
 </html>
-
