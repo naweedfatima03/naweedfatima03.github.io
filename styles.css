@@ -737,6 +737,10 @@ AT A GLANCE - 3 Equal Cards
   border-image-slice: 1;
 }
 
+.card.gmg-accent {
+  border: none;   /* remove the card’s default borders */
+}
+
 .gmg-accent:hover {
   box-shadow: 0 14px 28px rgba(15, 23, 42, 0.10);
   transform: translateY(-2px);
