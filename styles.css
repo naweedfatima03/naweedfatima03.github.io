@@ -769,7 +769,7 @@ AT A GLANCE - 3 Equal Cards
 /* Full white container for the Publications & Awards section */
 .pub-section {
   background: white;
-  border-radius: 24px;
+  border-radius: 0px;
   padding: 40px;
   margin-top: 40px;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
