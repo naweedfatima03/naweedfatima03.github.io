@@ -671,12 +671,12 @@ AT A GLANCE - 3 Equal Cards
 }
 
 .gmg-text h3.contrib-heading {
-  margin-bottom: 2px;
+  margin-bottom: 0px;
 }
 
 .gmg-text h4.contrib-heading {
   margin-top: 0;
-  margin-bottom: 6px;
+  margin-bottom: 0px;
 }
 
 /* Slider container */
