@@ -214,6 +214,42 @@ body {
   }
 }
 
+.ta-summary {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.ta-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.ta-table th,
+.ta-table td {
+  padding: 6px 4px;
+  text-align: left;
+}
+
+.ta-table thead th {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+
+.ta-table tbody tr + tr td {
+  border-top: 1px dashed rgba(148, 163, 184, 0.45);
+  padding-top: 8px;
+}
+
+.ta-table td strong {
+  font-weight: 600;
+}
+
 /* =========================================
    BUTTONS
 ========================================= */
