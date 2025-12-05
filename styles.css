@@ -613,6 +613,7 @@ AT A GLANCE - 3 Equal Cards
 .gmg-block {
   padding: 20px 20px 22px;
   background: #ffffff;
+  border-radius: 0;
 }
 
 .gmg-layout {
