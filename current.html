@@ -26,188 +26,180 @@
 
   <main class="page">
 
-    <!-- INTRO -->
-    <section>
-      <h2>Current Work</h2>
-      <p class="section-intro">
-        Selected engineering-led projects focusing on multimodal perception, city-scale deployments,
-        real-time embedded systems, and traffic analytics — as part of my work at Obvio, Inc.
-      </p>
-    </section>
+    <!-- SECTION 4 (moved to top): Trials & R&D -->
+<section class="contrib-section">
+  <article class="card gmg-block gmg-accent">
+    <div class="gmg-layout">
 
-    <!-- SECTION 1: Washington, D.C. Citywide Study -->
-    <section class="contrib-section">
-      <article class="card gmg-block gmg-accent">
-        <div class="gmg-layout">
+      <!-- TEXT -->
+      <div class="gmg-text">
+        <h3 class="contrib-heading">Trials: Research & Development</h3>
+        <h4 class="contrib-heading">Cross-Functional Pilots & Multimodal Capture</h4>
+        <div class="project-divider"></div>
 
-          <!-- TEXT -->
-          <div class="gmg-text">
-            <h3 class="contrib-heading">Washington, D.C. Citywide Traffic Violation Study</h3>
-            <h4 class="contrib-heading">Multi-Corridor Analysis of Distracted Driving</h4>
-            <div class="project-divider"></div>
-
-            <div class="contrib-entry">
-              <p class="meta">Obvio, Inc. · Trials & Analytics</p>
-              <p>
-                Conducted a citywide distracted-driving study across 30+ high-traffic corridors
-                in collaboration with DDOT, combining multimodal edge capture with a custom 
-                data-review and validation interface.
-              </p>
-              <ul class="contrib-list">
-                <li>Developed real-time multimodal data-capture tooling on Thundercomm devices.</li>
-                <li>Built vision-based detection and identity-obfuscation pipelines for violations.</li>
-                <li>Managed hardware deployments and AWS S3 dataset infrastructure.</li>
-                <li>Quantified violation prevalence, identifying distracted driving rates up to 20% at major intersections.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- SLIDER -->
-          <div class="gmg-slider">
-            <div class="gmg-slide active">
-              <img src="img/placeholder1.jpg" alt="Citywide violation study placeholder">
-            </div>
-            <div class="gmg-slide">
-              <img src="img/placeholder2.jpg" alt="Citywide violation study placeholder">
-            </div>
-
-            <button class="gmg-nav gmg-prev"><i class="fa-solid fa-chevron-left"></i></button>
-            <button class="gmg-nav gmg-next"><i class="fa-solid fa-chevron-right"></i></button>
-          </div>
+        <div class="contrib-entry">
+          <p class="meta">Obvio, Inc. · Trials (R&D)</p>
+          <p>
+            Coordinating cross-functional pilots involving hardware validation, embedded testing,
+            backend infrastructure optimization, and end-to-end violation analytics.
+          </p>
+          <ul class="contrib-list">
+            <li>Led 20+ engineers, annotators, and technicians across trial workflows.</li>
+            <li><strong>Scout App:</strong> Android-based multimodal capture using UVC cameras and 1D radars.</li>
+            <li><strong>Vision-Based Speeding:</strong> Designed a monocular bidirectional speed system validated across 30+ sites.</li>
+            <li>Supported experimentation of model variants and sensor configurations.</li>
+          </ul>
         </div>
-      </article>
-    </section>
+      </div>
 
-    <!-- SECTION 2: License Plate Visibility & Exposure -->
-    <section class="contrib-section">
-      <article class="card gmg-block gmg-accent">
-        <div class="gmg-layout">
-
-          <!-- TEXT -->
-          <div class="gmg-text">
-            <h3 class="contrib-heading">License Plate Visibility & Exposure Management</h3>
-            <h4 class="contrib-heading">Improving Evidence Quality Across Deployments</h4>
-            <div class="project-divider"></div>
-
-            <div class="contrib-entry">
-              <p class="meta">Obvio, Inc. · Evidence Quality</p>
-              <p>
-                Designed deployment-wide monitoring tools to evaluate license-plate visibility
-                and exposure performance, reducing evidence rejection rates from 15% to 5%
-                across production sites.
-              </p>
-              <ul class="contrib-list">
-                <li>Engineered OCR-based readability and Laplace-based visibility metrics.</li>
-                <li>Benchmarked manual vs. automated exposure scheduling across 40+ deployments.</li>
-                <li>Created a Retool annotation platform for validating exposure metrics.</li>
-                <li>Built Redash dashboards to track performance and guide field adjustments.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- SLIDER -->
-          <div class="gmg-slider">
-            <div class="gmg-slide active">
-              <img src="img/placeholder2.jpg" alt="Exposure management placeholder">
-            </div>
-            <div class="gmg-slide">
-              <img src="img/placeholder3.jpg" alt="Exposure management placeholder">
-            </div>
-
-            <button class="gmg-nav gmg-prev"><i class="fa-solid fa-chevron-left"></i></button>
-            <button class="gmg-nav gmg-next"><i class="fa-solid fa-chevron-right"></i></button>
-          </div>
-
+      <!-- SLIDER -->
+      <div class="gmg-slider">
+        <div class="gmg-slide active">
+          <img src="img/placeholder4.jpg" alt="Trials R&D placeholder">
         </div>
-      </article>
-    </section>
 
-    <!-- SECTION 3: Sentinel Vision Stack -->
-    <section class="contrib-section">
-      <article class="card gmg-block gmg-accent">
-        <div class="gmg-layout">
-
-          <!-- TEXT -->
-          <div class="gmg-text">
-            <h3 class="contrib-heading">Sentinel: C++ Embedded Vision Stack</h3>
-            <h4 class="contrib-heading">Real-Time Detection, Tracking & Behaviour Classification</h4>
-            <div class="project-divider"></div>
-
-            <div class="contrib-entry">
-              <p class="meta">Obvio, Inc. · Engineering Lead</p>
-              <p>
-                Contributed to system-architecture design for Sentinel, resolving bottlenecks in inference,
-                video quality, and event throughput through optimized modular refactoring and efficient memory management.
-              </p>
-              <ul class="contrib-list">
-                <li>Implemented the full C++ vision stack on Thundercomm hardware.</li>
-                <li>Integrated SNPE inference, BYTE Tracker, and behaviour classification.</li>
-                <li>Achieved stable 30 FPS throughput across 20+ production deployments.</li>
-                <li>System now supports 50+ live installations generating traffic enforcement evidence.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- SLIDER -->
-          <div class="gmg-slider">
-            <div class="gmg-slide active">
-              <img src="img/placeholder3.jpg" alt="Sentinel embedded vision placeholder">
-            </div>
-            <div class="gmg-slide">
-              <img src="img/placeholder4.jpg" alt="Sentinel embedded vision placeholder">
-            </div>
-
-            <button class="gmg-nav gmg-prev"><i class="fa-solid fa-chevron-left"></i></button>
-            <button class="gmg-nav gmg-next"><i class="fa-solid fa-chevron-right"></i></button>
-          </div>
-
+        <div class="gmg-slide">
+          <img src="img/placeholder1.jpg" alt="Trials R&D placeholder">
         </div>
-      </article>
-    </section>
 
-    <!-- SECTION 4: Trials & R&D -->
-    <section class="contrib-section">
-      <article class="card gmg-block gmg-accent">
-        <div class="gmg-layout">
+        <button class="gmg-nav gmg-prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="gmg-nav gmg-next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
 
-          <!-- TEXT -->
-          <div class="gmg-text">
-            <h3 class="contrib-heading">Trials: Research & Development</h3>
-            <h4 class="contrib-heading">Cross-Functional Pilots & Multimodal Capture</h4>
-            <div class="project-divider"></div>
+    </div>
+  </article>
+</section>
 
-            <div class="contrib-entry">
-              <p class="meta">Obvio, Inc. · Trials (R&D)</p>
-              <p>
-                Coordinating cross-functional pilots involving hardware validation, embedded testing,
-                backend infrastructure optimization, and end-to-end violation analytics.
-              </p>
-              <ul class="contrib-list">
-                <li>Led 20+ engineers, annotators, and technicians across trial workflows.</li>
-                <li><strong>Scout App:</strong> Android-based multimodal capture using UVC cameras and 1D radars.</li>
-                <li><strong>Vision-Based Speeding:</strong> Designed a monocular bidirectional speed system validated across 30+ sites.</li>
-                <li>Supported experimentation of model variants and sensor configurations.</li>
-              </ul>
-            </div>
-          </div>
+<!-- SECTION 3 (now second): Sentinel Vision Stack -->
+<section class="contrib-section">
+  <article class="card gmg-block gmg-accent">
+    <div class="gmg-layout">
 
-          <!-- SLIDER -->
-          <div class="gmg-slider">
-            <div class="gmg-slide active">
-              <img src="img/placeholder4.jpg" alt="Trials R&D placeholder">
-            </div>
+      <!-- TEXT -->
+      <div class="gmg-text">
+        <h3 class="contrib-heading">Sentinel: C++ Embedded Vision Stack</h3>
+        <h4 class="contrib-heading">Real-Time Detection, Tracking & Behaviour Classification</h4>
+        <div class="project-divider"></div>
 
-            <div class="gmg-slide">
-              <img src="img/placeholder1.jpg" alt="Trials R&D placeholder">
-            </div>
-
-            <button class="gmg-nav gmg-prev"><i class="fa-solid fa-chevron-left"></i></button>
-            <button class="gmg-nav gmg-next"><i class="fa-solid fa-chevron-right"></i></button>
-          </div>
-
+        <div class="contrib-entry">
+          <p class="meta">Obvio, Inc. · Engineering Lead</p>
+          <p>
+            Contributed to system-architecture design for Sentinel, resolving bottlenecks in inference,
+            video quality, and event throughput through optimized modular refactoring and efficient memory management.
+          </p>
+          <ul class="contrib-list">
+            <li>Implemented the full C++ vision stack on Thundercomm hardware.</li>
+            <li>Integrated SNPE inference, BYTE Tracker, and behaviour classification.</li>
+            <li>Achieved stable 30 FPS throughput across 20+ production deployments.</li>
+            <li>System now supports 50+ live installations generating traffic enforcement evidence.</li>
+          </ul>
         </div>
-      </article>
-    </section>
+      </div>
+
+      <!-- SLIDER -->
+      <div class="gmg-slider">
+        <div class="gmg-slide active">
+          <img src="img/placeholder3.jpg" alt="Sentinel embedded vision placeholder">
+        </div>
+        <div class="gmg-slide">
+          <img src="img/placeholder4.jpg" alt="Sentinel embedded vision placeholder">
+        </div>
+
+        <button class="gmg-nav gmg-prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="gmg-nav gmg-next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+
+    </div>
+  </article>
+</section>
+
+<!-- SECTION 2 (now third): License Plate Visibility & Exposure -->
+<section class="contrib-section">
+  <article class="card gmg-block gmg-accent">
+    <div class="gmg-layout">
+
+      <!-- TEXT -->
+      <div class="gmg-text">
+        <h3 class="contrib-heading">License Plate Visibility & Exposure Management</h3>
+        <h4 class="contrib-heading">Improving Evidence Quality Across Deployments</h4>
+        <div class="project-divider"></div>
+
+        <div class="contrib-entry">
+          <p class="meta">Obvio, Inc. · Evidence Quality</p>
+          <p>
+            Designed deployment-wide monitoring tools to evaluate license-plate visibility
+            and exposure performance, reducing evidence rejection rates from 15% to 5%
+            across production sites.
+          </p>
+          <ul class="contrib-list">
+            <li>Engineered OCR-based readability and Laplace-based visibility metrics.</li>
+            <li>Benchmarked manual vs. automated exposure scheduling across 40+ deployments.</li>
+            <li>Created a Retool annotation platform for validating exposure metrics.</li>
+            <li>Built Redash dashboards to track performance and guide field adjustments.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- SLIDER -->
+      <div class="gmg-slider">
+        <div class="gmg-slide active">
+          <img src="img/placeholder2.jpg" alt="Exposure management placeholder">
+        </div>
+        <div class="gmg-slide">
+          <img src="img/placeholder3.jpg" alt="Exposure management placeholder">
+        </div>
+
+        <button class="gmg-nav gmg-prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="gmg-nav gmg-next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+
+    </div>
+  </article>
+</section>
+
+<!-- SECTION 1 (now last): Washington, D.C. Citywide Study -->
+<section class="contrib-section">
+  <article class="card gmg-block gmg-accent">
+    <div class="gmg-layout">
+
+      <!-- TEXT -->
+      <div class="gmg-text">
+        <h3 class="contrib-heading">Washington, D.C. Citywide Traffic Violation Study</h3>
+        <h4 class="contrib-heading">Multi-Corridor Analysis of Distracted Driving</h4>
+        <div class="project-divider"></div>
+
+        <div class="contrib-entry">
+          <p class="meta">Obvio, Inc. · Trials & Analytics</p>
+          <p>
+            Conducted a citywide distracted-driving study across 30+ high-traffic corridors
+            in collaboration with DDOT, combining multimodal edge capture with a custom 
+            data-review and validation interface.
+          </p>
+          <ul class="contrib-list">
+            <li>Developed real-time multimodal data-capture tooling on Thundercomm devices.</li>
+            <li>Built vision-based detection and identity-obfuscation pipelines for violations.</li>
+            <li>Managed hardware deployments and AWS S3 dataset infrastructure.</li>
+            <li>Quantified violation prevalence, identifying distracted driving rates up to 20% at major intersections.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- SLIDER -->
+      <div class="gmg-slider">
+        <div class="gmg-slide active">
+          <img src="img/placeholder1.jpg" alt="Citywide violation study placeholder">
+        </div>
+        <div class="gmg-slide">
+          <img src="img/placeholder2.jpg" alt="Citywide violation study placeholder">
+        </div>
+
+        <button class="gmg-nav gmg-prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="gmg-nav gmg-next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+
+    </div>
+  </article>
+</section>
 
     <footer>
       Last updated: December 2025 · For a full list of projects, see my CV.
